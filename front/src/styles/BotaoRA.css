@@ -1,0 +1,94 @@
+.mt-ar {
+  text-align: center;
+  padding: 32px 20px;
+  border-color: rgba(34, 224, 138, 0.4);
+}
+
+.mt-ar-icone img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+.mt-botao-icone img {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
+.mt-ar h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.mt-ar p {
+  color: #94a3b8;
+  max-width: 460px;
+  margin: 8px auto 20px;
+}
+
+.mt-botao-ra {
+  display: flex;
+  align-items: center;
+  max-width: 630px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #0d9f55, #15c76a);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 18px rgba(34, 224, 138, 0.35);
+}
+
+.mt-botao-ra:hover {
+  color: #fff;
+  filter: brightness(1.1);
+}
+
+.mt-botao-icone {
+  font-size: 26px;
+  padding-right: 18px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mt-botao-texto {
+  flex: 1;
+  text-align: center;
+}
+
+.mt-botao-seta {
+  font-size: 24px;
+}
+
+.mt-card.mt-ar {
+  position: relative;
+  background: transparent;
+  border-radius: 40px;
+  min-height: 450px;
+  min-width: 280px;
+  padding: 70px 60px;
+  background: linear-gradient(90deg, #050c14 35%, #0a3d3069 100%);
+  border: none;
+}
+
+.mt-ar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/fundo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.19;
+  z-index: 0;
+  pointer-events: none;
+  inset: -25px -25px;
+}
+
+.mt-ar > * {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,194 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #03070d;
+  background-image: linear-gradient(180deg, #0a1a2a 0%, #03070d 100%);
+  background-attachment: fixed;
+  color: #fff;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.mt-pagina {
+  max-width: 1100px;
+  padding: 16px 12px;
+}
+
+.mt-card {
+  background: linear-gradient(180deg, #08131f, #050c14);
+  border: 1px solid rgba(34, 224, 138, 0.25);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+
+.mt-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-right: 10px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, #050c14 35%, #0a3d30 100%);
+}
+.mt-header::before,
+.mt-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-35deg);
+  pointer-events: none;
+}
+
+.mt-header::before {
+  right: 22%;
+  width: 8px;
+  background: rgba(3, 255, 142, 0.12);
+  opacity: 80%;
+}
+
+.mt-header::after {
+  right: 17%;
+  width: 28px;
+  background: rgba(19, 211, 125, 0.12);
+}
+
+.mt-logo img {
+  height: 90px;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 45px;
+  
+}
+
+.mt-divisor {
+  width: 1px;
+  height: 48px;
+  background: #06ff83;
+}
+
+.mt-header-texto h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  white-space: nowrap;
+  padding-left: 45px;
+}
+
+.mt-header-texto p {
+  margin: 0;
+  color: #cbd5e1;
+  padding-left: 45px;
+}
+
+.mt-status-online {
+  margin-left: 328px;
+  border: 1px solid rgba(34, 224, 138, 0.5);
+  border-radius: 20px;
+  padding: 6px 14px;
+  color: #22e08a;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.137);
+}
+
+.mt-bolinha {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22e08a;
+}
+
+.mt-status-online.offline {
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+.mt-status-online.offline .mt-bolinha {
+  background: #ef4444;
+}
+
+/* ---------- realidade aumentada ---------- */
+
+.mt-ar {
+  text-align: center;
+  padding: 32px 20px;
+  border-color: rgba(34, 224, 138, 0.4);
+}
+
+.mt-ar-icone {
+  font-size: 80px;
+  line-height: 1;
+  color: #22e08a;
+  text-shadow: 0 0 18px #22e08a;
+  margin-bottom: 14px;
+}
+
+.mt-ar h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.mt-ar p {
+  color: #94a3b8;
+  max-width: 460px;
+  margin: 8px auto 20px;
+}
+
+.mt-botao-ra {
+  display: flex;
+  align-items: center;
+  max-width: 630px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #0d9f55, #15c76a);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 18px rgba(34, 224, 138, 0.35);
+}
+
+.mt-botao-ra:hover {
+  color: #fff;
+  filter: brightness(1.1);
+}
+
+.mt-botao-icone {
+  font-size: 26px;
+  padding-right: 18px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mt-botao-texto {
+  flex: 1;
+  text-align: center;
+}
+
+.mt-botao-seta {
+  font-size: 24px;
+}
+
+/* ---------- celular ---------- */
+@media (max-width: 576px) {
+  .mt-header {
+    flex-wrap: wrap;
+  }
+
+  .mt-divisor {
+    display: none;
+  }
+
+  .mt-status-online {
+    margin-left: 0;
+  }
+
+  .mt-ar h2 {
+    font-size: 19px;
+  }
+}
