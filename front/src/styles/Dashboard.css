@@ -12,7 +12,8 @@ body {
 }
 
 .mt-pagina {
-  max-width: 1100px;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 16px 12px;
 }
 
@@ -24,6 +25,7 @@ body {
   margin-bottom: 16px;
 }
 
+/* ---------- cabeçalho ---------- */
 .mt-header {
   display: flex;
   align-items: center;
@@ -33,6 +35,7 @@ body {
   overflow: hidden;
   background: linear-gradient(90deg, #050c14 35%, #0a3d30 100%);
 }
+
 .mt-header::before,
 .mt-header::after {
   content: "";
@@ -44,24 +47,27 @@ body {
 }
 
 .mt-header::before {
-  right: 22%;
+  right: 12%;
   width: 8px;
   background: rgba(3, 255, 142, 0.12);
   opacity: 80%;
 }
 
 .mt-header::after {
-  right: 17%;
+  right: 8%;
   width: 28px;
   background: rgba(19, 211, 125, 0.12);
 }
 
+.mt-header > * {
+  position: relative;
+  z-index: 1;
+}
+
 .mt-logo img {
-  height: 90px;
-  width: auto;
-  padding-left: 30px;
-  padding-right: 45px;
-  
+  height: 56px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .mt-divisor {
@@ -75,17 +81,18 @@ body {
   font-size: 26px;
   font-weight: 800;
   white-space: nowrap;
-  padding-left: 45px;
+  padding-left: 20px;
 }
 
 .mt-header-texto p {
   margin: 0;
   color: #cbd5e1;
-  padding-left: 45px;
+  padding-left: 20px;
 }
 
 .mt-status-online {
-  margin-left: 328px;
+  margin-left: 0;
+  margin-right: 10px;
   border: 1px solid rgba(34, 224, 138, 0.5);
   border-radius: 20px;
   padding: 6px 14px;
@@ -112,83 +119,81 @@ body {
   background: #ef4444;
 }
 
-/* ---------- realidade aumentada ---------- */
-
-.mt-ar {
-  text-align: center;
-  padding: 32px 20px;
-  border-color: rgba(34, 224, 138, 0.4);
+/* ---------- caixas do esqueleto (temporárias) ---------- */
+.mt-card.mt-caixa {
+  margin-bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.mt-ar-icone {
-  font-size: 80px;
-  line-height: 1;
-  color: #22e08a;
-  text-shadow: 0 0 18px #22e08a;
-  margin-bottom: 14px;
+.mt-caixa h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #cbd5e1;
 }
 
-.mt-ar h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.mt-ar p {
-  color: #94a3b8;
-  max-width: 460px;
-  margin: 8px auto 20px;
-}
-
-.mt-botao-ra {
+.mt-caixa-corpo {
+  flex: 1;
   display: flex;
   align-items: center;
-  max-width: 630px;
-  margin: 0 auto;
-  padding: 14px 24px;
-  border-radius: 16px;
-  background: linear-gradient(90deg, #0d9f55, #15c76a);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 0 18px rgba(34, 224, 138, 0.35);
+  justify-content: center;
+  border: 1px dashed rgba(148, 163, 184, 0.3);
+  border-radius: 10px;
+  color: #64748b;
+  font-size: 13px;
 }
 
-.mt-botao-ra:hover {
-  color: #fff;
-  filter: brightness(1.1);
-}
+/* ---------- telas médias: barra de RA desce pra uma linha própria ---------- */
+@media (max-width: 1199px) {
+  .mt-header {
+    flex-wrap: wrap;
+  }
 
-.mt-botao-icone {
-  font-size: 26px;
-  padding-right: 18px;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.mt-botao-texto {
-  flex: 1;
-  text-align: center;
-}
-
-.mt-botao-seta {
-  font-size: 24px;
+  .mt-header .mt-ra {
+    order: 3;
+    flex-basis: 100%;
+  }
 }
 
 /* ---------- celular ---------- */
 @media (max-width: 576px) {
   .mt-header {
-    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .mt-logo img {
+    height: 56px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .mt-divisor {
     display: none;
   }
 
-  .mt-status-online {
-    margin-left: 0;
+  .mt-header-texto h1,
+  .mt-header-texto p {
+    padding-left: 0;
   }
 
-  .mt-ar h2 {
-    font-size: 19px;
+  .mt-header-texto h1 {
+    font-size: 22px;
   }
+
+  .mt-status-online {
+    margin-right: 0;
+  }
+
+  .mt-ra-icone {
+    display: none;
+  }
+
+  .mt-botao-ra {
+    width: 100%;
+    justify-content: center;
+  }
+  .mt-ra-texto strong {
+  font-size: 14px;
+}
 }

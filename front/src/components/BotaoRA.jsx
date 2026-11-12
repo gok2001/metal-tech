@@ -1,25 +1,34 @@
-    import "../styles/BotaoRA.css";
-    import iconeCaixa from '../images/icon-caixa.png';
-    import iconeBranco from '../images/icon-branco.png';
+import "../styles/BotaoRA.css";
+import iconeCaixa from "../images/icon-caixa.png";
+import iconeBranco from "../images/icon-branco.png";
 
-    function BotaoRA() {
-    return (
-        <section className="mt-card mt-ar">
-        <div className="mt-ar-icone">
-            <img src={iconeCaixa} alt="icon-caixa" />
-        </div>
-        <h2>Dados da produção agora em Realidade Aumentada</h2>
-        <p>Acesse a câmera e visualize as informações em tempo real diretamente na esteira.</p>
+function BotaoRA(props) {
+  var classe = "mt-botao-ra";
+  var destino = props.caminho;
 
-        <a href="/ra" className="mt-botao-ra">
-            <span className="mt-botao-icone">
-            <img src={iconeBranco} alt="icon-branco" />
-            </span>
-            <span className="mt-botao-texto">Acessar Realidade Aumentada</span>
-            <span className="mt-botao-seta">&gt;</span>
-        </a>
-        </section>
-    );
-    }
+  if (!props.caminho) {
+    classe = "mt-botao-ra desativado";
+    destino = undefined;
+  }
 
-    export default BotaoRA;
+  return (
+    <div className="mt-ra">
+      <img className="mt-ra-icone" src={iconeCaixa} alt="" />
+
+      <div className="mt-ra-texto">
+        <strong>Dados da produção agora em Realidade Aumentada</strong>
+        <small>Acesse a câmera e visualize as informações em tempo real diretamente na esteira.</small>
+      </div>
+
+      <a href={destino} className={classe}>
+        <span className="mt-botao-icone">
+          <img src={iconeBranco} alt="" />
+        </span>
+        <span>Acessar Realidade Aumentada</span>
+        <span>&gt;</span>
+      </a>
+    </div>
+  );
+}
+
+export default BotaoRA;
