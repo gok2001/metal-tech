@@ -1,3 +1,7 @@
 spring:
   application:
     name: monitoramento-api
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3307/metaltech}
+    username: ${DB_USERNAME:metaltech}
+    password: ${DB_PASSWORD}
