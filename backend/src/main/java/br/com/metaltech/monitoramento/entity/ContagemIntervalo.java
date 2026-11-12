@@ -27,5 +27,16 @@ public class ContagemIntervalo {
     private Integer quantidadeNaoMetalicas;
 
     protected ContagemIntervalo() {
+
+    }
+
+    public ContagemIntervalo(
+        LocalDateTime inicioIntervalo,
+        Integer quantidadeMetalicas,
+        Integer quantidadeNaoMetalicas
+    ) {
+        this.inicioIntervalo = inicioIntervalo;
+        this.quantidadeMetalicas = quantidadeMetalicas;
+        this.quantidadeNaoMetalicas = quantidadeNaoMetalicas;
     }
 }
