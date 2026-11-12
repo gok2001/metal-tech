@@ -32,5 +32,37 @@ public class Reservatorio {
     private Integer ciclosCompletos;
 
     protected Reservatorio() {
+
+    }
+
+    public boolean adicionarPecas(int quantidade) {
+        if (quantidade < 0) {
+            throw new IllegalArgumentException("A quantidade de peças não pode ser negativa");
+        }
+
+        if (capacidadeMaxima == null || capacidadeMaxima <= 0) {
+            throw new IllegalArgumentException("A capacidade do reservatório precisa ser maior que zero");
+        }
+
+        if (quantidadeAtual == null || ciclosCompletos == null) {
+            throw new IllegalArgumentException("O reservatório precisa ser inicializado");
+        }
+
+        boolean atingiuCapacidade = false;
+
+        for (int i = 0; i < quantidade; i++) {
+            if (quantidadeAtual.intValue() == capacidadeMaxima.intValue()) {
+                quantidadeAtual = 0;
+            }
+
+            quantidadeAtual++;
+
+            if (quantidadeAtual.intValue() == capacidadeMaxima.intValue()) {
+                ciclosCompletos++;
+                atingiuCapacidade = true;
+            }
+        }
+
+        return atingiuCapacidade;
     }
 }
