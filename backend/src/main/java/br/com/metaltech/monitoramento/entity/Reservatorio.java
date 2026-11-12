@@ -35,6 +35,26 @@ public class Reservatorio {
 
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public TipoPeca getTipoPeca() {
+        return tipoPeca;
+    }
+
+    public Integer getCapacidadeMaxima() {
+        return capacidadeMaxima;
+    }
+
+    public Integer getQuantidadeAtual() {
+        return quantidadeAtual;
+    }
+
+    public Integer getCiclosCompletos() {
+        return ciclosCompletos;
+    }
+
     public boolean adicionarPecas(int quantidade) {
         if (quantidade < 0) {
             throw new IllegalArgumentException("A quantidade de peças não pode ser negativa");
