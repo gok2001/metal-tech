@@ -23,7 +23,7 @@ public class ContagemIntervalo {
     @Column(name = "quantidade_metalicas", nullable = false) 
     private Integer quantidadeMetalicas;
 
-    @Column(name = "quantidade_nao_metalicas") 
+    @Column(name = "quantidade_nao_metalicas", nullable = false) 
     private Integer quantidadeNaoMetalicas;
 
     protected ContagemIntervalo() {
