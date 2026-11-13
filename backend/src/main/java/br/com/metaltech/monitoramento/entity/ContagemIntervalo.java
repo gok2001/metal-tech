@@ -30,6 +30,22 @@ public class ContagemIntervalo {
 
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public LocalDateTime getInicioIntervalo() {
+        return inicioIntervalo;
+    }
+
+    public Integer getQuantidadeMetalicas() {
+        return quantidadeMetalicas;
+    }
+
+    public Integer getQuantidadeNaoMetalicas() {
+        return quantidadeNaoMetalicas;
+    }
+
     public ContagemIntervalo(
         LocalDateTime inicioIntervalo,
         Integer quantidadeMetalicas,
