@@ -68,7 +68,7 @@ public class ContagemIntervaloService {
         );
     }
 
-    @Transactional 
+    @Transactional(readOnly = true) 
     public List<ContagemIntervaloHistoricoResponse> listarHistorico() {
         return contagemRepository.findAllByOrderByInicioIntervaloAsc()
             .stream()
