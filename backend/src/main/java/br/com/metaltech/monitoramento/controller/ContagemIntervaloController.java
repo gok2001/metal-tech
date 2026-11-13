@@ -1,10 +1,13 @@
 package br.com.metaltech.monitoramento.controller;
 
 import br.com.metaltech.monitoramento.dto.request.ContagemIntervaloRequest;
+import br.com.metaltech.monitoramento.dto.response.ContagemIntervaloHistoricoResponse;
 import br.com.metaltech.monitoramento.dto.response.ContagemIntervaloResponse;
 import br.com.metaltech.monitoramento.service.ContagemIntervaloService;
 
 import jakarta.validation.Valid;
+
+import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,5 +30,10 @@ public class ContagemIntervaloController {
         ContagemIntervaloResponse response = contagemService.registrar(request);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @GetMapping 
+    public List<ContagemIntervaloHistoricoResponse> listarHistorico() {
+        return contagemService.listarHistorico();
     }
 }
