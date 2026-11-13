@@ -33,6 +33,18 @@ public class ContagemIntervalo {
 
     }
 
+    public ContagemIntervalo(
+        LocalDateTime inicioIntervalo,
+        Long totalPecas,
+        Integer quantidadeMetalicas,
+        Integer quantidadeNaoMetalicas
+    ) {
+        this.inicioIntervalo = inicioIntervalo;
+        this.totalPecas = totalPecas;
+        this.quantidadeMetalicas = quantidadeMetalicas;
+        this.quantidadeNaoMetalicas = quantidadeNaoMetalicas;
+    }
+
     public Long getId() {
         return id;
     }
@@ -51,15 +63,5 @@ public class ContagemIntervalo {
 
     public Integer getQuantidadeNaoMetalicas() {
         return quantidadeNaoMetalicas;
-    }
-
-    public ContagemIntervalo(
-        LocalDateTime inicioIntervalo,
-        Integer quantidadeMetalicas,
-        Integer quantidadeNaoMetalicas
-    ) {
-        this.inicioIntervalo = inicioIntervalo;
-        this.quantidadeMetalicas = quantidadeMetalicas;
-        this.quantidadeNaoMetalicas = quantidadeNaoMetalicas;
     }
 }
