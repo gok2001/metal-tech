@@ -14,7 +14,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController 
-@RequestMapping("/api/contagens") 
 public class ContagemIntervaloController {
     
     private final ContagemIntervaloService contagemService;
@@ -23,7 +22,7 @@ public class ContagemIntervaloController {
         this.contagemService = contagemService;
     }
 
-    @PostMapping 
+    @PostMapping("/api/v1/analytics/production") 
     public ResponseEntity<ContagemIntervaloResponse> registrar(
         @Valid @RequestBody ContagemIntervaloRequest request
     ) {
@@ -32,7 +31,7 @@ public class ContagemIntervaloController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    @GetMapping 
+    @GetMapping("/api/contagens") 
     public List<ContagemIntervaloHistoricoResponse> listarHistorico() {
         return contagemService.listarHistorico();
     }
