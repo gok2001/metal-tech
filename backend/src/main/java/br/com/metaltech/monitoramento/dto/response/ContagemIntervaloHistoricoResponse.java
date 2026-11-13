@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 public record ContagemIntervaloHistoricoResponse(
     Long id,
     LocalDateTime inicioIntervalo,
+    Long totalPecas,
     Integer quantidadeMetalicas,
     Integer quantidadeNaoMetalicas
 ) {
