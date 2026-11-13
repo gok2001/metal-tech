@@ -1,42 +1,56 @@
-
-.mt-indicador {
+/* card: ícone na esquerda, texto ao lado */
+.mt-card.mt-indicador {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
   height: 100%;
   min-height: 110px;
   margin-bottom: 0;
+  padding: 14px 16px;
 }
 
-.mt-indicador-topo {
+.mt-indicador-icone {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #cbd5e1;
-  font-size: 13px;
+  flex-shrink: 0;
 }
 
-.mt-indicador {
+.mt-indicador-texto {
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  /* ajuste conforme seu layout atual */
+}
+
+.mt-indicador-titulo {
+  font-size: 14px;
+  color: #e2e8f0;
 }
 
 .mt-indicador-linha {
   display: flex;
   align-items: baseline;
-  gap: 10px; /* Dá um respiro entre o número principal e a variação */
-  margin: 4px 0;
+  gap: 10px;
+  margin: 2px 0;
 }
 
 .mt-indicador-linha strong {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
+.mt-indicador-texto small {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* variação (↑ +12%) */
 .mt-variacao {
-  font-size: 0.85rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 .mt-variacao.sobe {
@@ -47,54 +61,33 @@
   color: #FF4D4D;
 }
 
-.mt-indicador h2 {
-  margin: 12px 0 4px;
-  font-size: 28px;
-  font-weight: 800;
-}
-
-.mt-indicador small {
-  color: #94a3b8;
-}
-
-.mt-indicador.verde .mt-indicador-icone {
-  color: #22e08a;
-}
-
-.mt-indicador.amarelo .mt-indicador-icone {
-  color: #facc15;
-}
-
-/* Container da barra de progresso dentro do card */
+/* barra de progresso do card de Reservatorio */
 .mt-progresso-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 8px;
+  margin-top: 6px;
   width: 100%;
 }
 
-/* A trilha de fundo com a cor neutra */
 .mt-barra-fundo {
   flex-grow: 1;
-  height: 15px;
-  background-color: #1a232a; /* Cor neutra escura de fundo */
-  border-radius: 4px;
+  height: 12px;
+  background-color: #1a232a;
+  border-radius: 6px;
   overflow: hidden;
 }
 
-/* A parte preenchida em verde neon */
 .mt-barra-preenchida {
   height: 100%;
   background-color: #00DCA0;
-  box-shadow: 0 0 6px rgba(0, 220, 160, 0.5); /* Efeito de brilho */
-  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 220, 160, 0.5);
+  border-radius: 6px;
   transition: width 0.3s ease;
 }
 
-/* O texto da porcentagem ao lado */
 .mt-porcentagem-texto {
-  font-size: 0.85rem;
+  font-size: 14px;
   font-weight: bold;
   color: #ffffff;
 }

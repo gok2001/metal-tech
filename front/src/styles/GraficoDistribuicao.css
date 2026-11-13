@@ -1,0 +1,75 @@
+.mt-card.mt-grafico {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 260px;
+  margin-bottom: 0;
+}
+
+.mt-grafico-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #e2e8f0;
+}
+
+.mt-grafico-titulo svg {
+  color: #2d8cff;
+}
+
+.mt-rosca-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.mt-rosca {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.mt-rosca-centro {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.mt-rosca-centro strong {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.mt-rosca-centro small {
+  color: #94a3b8;
+}
+
+.mt-legenda-item {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.mt-legenda-item strong {
+  display: block;
+  padding-left: 20px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.mt-ponto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
