@@ -20,6 +20,9 @@ public class ContagemIntervalo {
     @Column(name = "inicio_intervalo", nullable = false, unique = true) 
     private LocalDateTime inicioIntervalo;
 
+    @Column(name = "total_pecas") 
+    private Long totalPecas;
+
     @Column(name = "quantidade_metalicas", nullable = false) 
     private Integer quantidadeMetalicas;
 
@@ -36,6 +39,10 @@ public class ContagemIntervalo {
 
     public LocalDateTime getInicioIntervalo() {
         return inicioIntervalo;
+    }
+
+    public Long getTotalPecas() {
+        return totalPecas;
     }
 
     public Integer getQuantidadeMetalicas() {
