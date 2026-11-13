@@ -1,12 +1,15 @@
 package br.com.metaltech.monitoramento.service;
 
 import br.com.metaltech.monitoramento.dto.request.ContagemIntervaloRequest;
+import br.com.metaltech.monitoramento.dto.response.ContagemIntervaloHistoricoResponse;
 import br.com.metaltech.monitoramento.dto.response.ContagemIntervaloResponse;
 import br.com.metaltech.monitoramento.entity.ContagemIntervalo;
 import br.com.metaltech.monitoramento.entity.Reservatorio;
 import br.com.metaltech.monitoramento.enums.TipoPeca;
 import br.com.metaltech.monitoramento.repository.ContagemIntervaloRepository;
 import br.com.metaltech.monitoramento.repository.ReservatorioRepository;
+
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -63,5 +66,18 @@ public class ContagemIntervaloService {
             metalicoAtingiuCapacidade,
             naoMetalicoAtingiuCapacidade
         );
+    }
+
+    @Transactional 
+    public List<ContagemIntervaloHistoricoResponse> listarHistorico() {
+        return contagemRepository.findAllByOrderByInicioIntervaloAsc()
+            .stream()
+            .map(contagem -> new ContagemIntervaloHistoricoResponse(
+                contagem.getId(),
+                contagem.getInicioIntervalo(),
+                contagem.getQuantidadeMetalicas(),
+                contagem.getQuantidadeNaoMetalicas()
+            ))
+            .toList();
     }
 }
