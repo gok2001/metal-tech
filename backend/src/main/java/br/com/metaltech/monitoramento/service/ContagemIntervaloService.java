@@ -9,6 +9,8 @@ import br.com.metaltech.monitoramento.enums.TipoPeca;
 import br.com.metaltech.monitoramento.repository.ContagemIntervaloRepository;
 import br.com.metaltech.monitoramento.repository.ReservatorioRepository;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -30,7 +32,11 @@ public class ContagemIntervaloService {
 
     @Transactional 
     public ContagemIntervaloResponse registrar(ContagemIntervaloRequest request) {
-        if (contagemRepository.existsByInicioIntervalo(request.inicioIntervalo())) {
+        LocalDateTime inicioUtc = request.inicioIntervalo()
+            .withOffsetSameInstant(ZoneOffset.UTC)
+            .toLocalDateTime();
+
+        if (contagemRepository.existsByInicioIntervalo(inicioUtc)) {
             throw new IllegalArgumentException("Já existe uma contagem para esse horário");
         }
 
@@ -50,7 +56,8 @@ public class ContagemIntervaloService {
         boolean naoMetalicoAtingiuCapacidade = naoMetalico.adicionarPecas(request.quantidadeNaoMetalicas());
 
         ContagemIntervalo contagem = new ContagemIntervalo(
-            request.inicioIntervalo(),
+            inicioUtc,
+            request.totalPecas(),
             request.quantidadeMetalicas(),
             request.quantidadeNaoMetalicas()
         );
@@ -60,7 +67,7 @@ public class ContagemIntervaloService {
         reservatorioRepository.save(naoMetalico);
 
         return new ContagemIntervaloResponse(
-            request.inicioIntervalo(),
+            inicioUtc,
             request.quantidadeMetalicas(),
             request.quantidadeNaoMetalicas(),
             metalicoAtingiuCapacidade,
@@ -75,6 +82,7 @@ public class ContagemIntervaloService {
             .map(contagem -> new ContagemIntervaloHistoricoResponse(
                 contagem.getId(),
                 contagem.getInicioIntervalo(),
+                contagem.getTotalPecas(),
                 contagem.getQuantidadeMetalicas(),
                 contagem.getQuantidadeNaoMetalicas()
             ))
