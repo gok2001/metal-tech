@@ -33,7 +33,7 @@ public class Anomalia {
     @Column(nullable = false, length = 100) 
     private String equipamento;
 
-    @Column(name = "tipo_reservatorio", nullable = false, length = 20) 
+    @Column(name = "tipo_reservatorio", nullable = true, length = 20) 
     private String tipoReservatorio;
 
     @Column(nullable = false, columnDefinition = "TEXT") 
