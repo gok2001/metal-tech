@@ -1,31 +1,28 @@
+
 import "../styles/CardIndicador.css";
 
-function CardIndicador(props) {
-  var valor = props.valor;
-  if (typeof valor === "number") {
-    valor = valor.toLocaleString("pt-BR");
-  }
-
-  // a variação só aparece se vier um valor (a API ainda não manda isso)
-  var variacao = null;
-  if (props.variacao !== undefined && props.variacao !== null) {
-    var sinal = props.variacao >= 0 ? "+" : "";
-    var seta = props.variacao >= 0 ? "↑" : "↓";
-    var classe = props.variacao >= 0 ? "mt-variacao sobe" : "mt-variacao desce";
-    variacao = <span className={classe}>{seta} {sinal}{props.variacao}%</span>;
-  }
+function CardIndicador({ titulo, valor, icone, cor = "azul", legenda }) {
+  const valorExibido =
+    valor === null || valor === undefined
+      ? "—"
+      : typeof valor === "number"
+        ? valor.toLocaleString("pt-BR")
+        : valor;
 
   return (
     <section className="mt-card mt-indicador">
-      <div className={"mt-indicador-icone " + (props.cor || "verde")}>{props.icone}</div>
+      <div className={`mt-indicador-icone ${cor}`}>
+        {icone}
+      </div>
 
       <div className="mt-indicador-texto">
-        <span className="mt-indicador-titulo">{props.titulo}</span>
+        <span className="mt-indicador-titulo">{titulo}</span>
+
         <div className="mt-indicador-linha">
-          <strong>{valor}</strong>
-          {variacao}
+          <strong>{valorExibido}</strong>
         </div>
-        {props.legenda && <small>{props.legenda}</small>}
+
+        {legenda && <small>{legenda}</small>}
       </div>
     </section>
   );
