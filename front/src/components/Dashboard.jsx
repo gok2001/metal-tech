@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 
 import Header from "./Header.jsx";
@@ -9,67 +8,97 @@ import CardOcupacao from "./CardOcupacao.jsx";
 import GraficoDistribuicao from "./GraficoDistribuicao.jsx";
 import GraficoProducao from "./GraficoProducao.jsx";
 import GraficoReservatorio from "./GraficoReservatorio.jsx";
+import Rodape from "./Rodape.jsx";
+import EstatisticasDescritivas from "./EstatisticasDescritivas.jsx";
+import HistogramaReservatorio from "./HistogramaReservatorio.jsx";
+import BoxplotReservatorio from "./BoxplotReservatorio.jsx";
 
 import { buscarDados } from "../services/api.js";
 
-import {
-  Box,
-  Settings,
-  Recycle
-} from "lucide-react";
+import { Box, Settings, Recycle } from "lucide-react";
 
 var CAMINHO_RA = "";
 
 function Dashboard() {
-  const [online, setOnline] = useState(false);
+  var [online, setOnline] = useState(false);
+  var [ultimaAtualizacao, setUltimaAtualizacao] = useState(null);
 
-  const [dados, setDados] = useState({
+  // Todos os dados começam vazios.
+  // Nenhum valor é simulado.
+  var [dados, setDados] = useState({
+    // Contadores gerais
     total_pecas: null,
     pecas_metalicas: null,
     pecas_nao_metalicas: null,
 
-    historico_producao: [],
+    // Reservatório metálico
+    quantidade_reservatorio_metalico: null,
+    capacidade_reservatorio_metalico: null,
 
-    ultima_atualizacao: null
+    // Reservatório não metálico
+    quantidade_reservatorio_nao_metalico: null,
+    capacidade_reservatorio_nao_metalico: null,
+
+    // Históricos dos gráficos
+    boxplot_reservatorio: null,
+    histograma_reservatorio: [],
+    historico_producao: [],
+    historico_reservatorio: [],
+
+    // Estatísticas calculadas pelo back-end
+    estatisticas_producao: null,
+    estatisticas_reservatorio: null,
   });
 
-  useEffect(() => {
+  useEffect(function () {
+    var ativo = true;
+
     function carregarDados() {
       buscarDados()
-        .then((resposta) => {
-          setOnline(true);
+        .then(function (resposta) {
+          if (!ativo) return;
 
           if (resposta) {
-            setDados((anterior) => ({
-              ...anterior,
-              ...resposta
-            }));
+            setOnline(true);
+
+            // Atualiza os dados recebidos da API
+            setDados(function (anterior) {
+              return Object.assign({}, anterior, resposta);
+            });
+
+            // Última atualização bem-sucedida
+            setUltimaAtualizacao(resposta.ultima_atualizacao || new Date());
+          } else {
+            setOnline(false);
           }
         })
-        .catch(() => {
-          setOnline(false);
+        .catch(function () {
+          if (ativo) {
+            setOnline(false);
+          }
         });
     }
 
     carregarDados();
 
-    const intervalo = setInterval(carregarDados, 5000);
+    // Consulta a API a cada 5 segundos
+    var intervalo = setInterval(carregarDados, 5000);
 
-    return () => clearInterval(intervalo);
+    return function () {
+      ativo = false;
+      clearInterval(intervalo);
+    };
   }, []);
+
+  var estatisticasProducao = dados.estatisticas_producao || {};
 
   return (
     <div className="mt-pagina container">
-
       {/* CABEÇALHO */}
-      <Header
-        online={online}
-        caminhoRA={CAMINHO_RA}
-      />
+      <Header online={online} caminhoRA={CAMINHO_RA} />
 
       {/* PRIMEIRA LINHA: CINCO CARDS */}
-      <div className="row row-cols-2 row-cols-md-3 row-cols-xl-5 g-3 mb-3">
-
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-5 g-3 mb-3">
         {/* TOTAL DE PEÇAS */}
         <div className="col">
           <CardIndicador
@@ -100,41 +129,42 @@ function Dashboard() {
           />
         </div>
 
-        {/* OCUPAÇÃO DO RESERVATÓRIO METÁLICO */}
+        {/* RESERVATÓRIO METÁLICO */}
         <div className="col">
           <CardOcupacao
             titulo="Reservatório Metálico"
-            percentual={0}
-            icone={<Settings size={32} />}
+            quantidade={dados.quantidade_reservatorio_metalico}
+            capacidade={dados.capacidade_reservatorio_metalico}
+            icone={<Box size={32} />}
             cor="azul"
           />
         </div>
 
-        {/* OCUPAÇÃO DO RESERVATÓRIO NÃO METÁLICO */}
+        {/* RESERVATÓRIO NÃO METÁLICO */}
         <div className="col">
           <CardOcupacao
             titulo="Reservatório Não Metálico"
-            percentual={0}
+            quantidade={dados.quantidade_reservatorio_nao_metalico}
+            capacidade={dados.capacidade_reservatorio_nao_metalico}
             icone={<Recycle size={32} />}
             cor="laranja"
           />
         </div>
-
       </div>
 
       {/* SEGUNDA LINHA: GRÁFICOS */}
       <div className="row g-3 mb-3">
-
+        {/* GRÁFICO DE PRODUÇÃO */}
         <div className="col-12 col-lg-6 col-xl-4">
-          <GraficoProducao
-            dados={dados.historico_producao}
-          />
+          <GraficoProducao dados={dados.historico_producao} />
         </div>
 
+        {/* GRÁFICO DO RESERVATÓRIO */}
         <div className="col-12 col-lg-6 col-xl-4">
-          <GraficoReservatorio />
+          <GraficoReservatorio dados={dados.historico_reservatorio} />
         </div>
 
+        {/* GRÁFICO DE DISTRIBUIÇÃO */}
         <div className="col-12 col-xl-4">
           <GraficoDistribuicao
             metalicas={dados.pecas_metalicas}
@@ -142,41 +172,32 @@ function Dashboard() {
             total={dados.total_pecas}
           />
         </div>
-
       </div>
 
       {/* TERCEIRA LINHA: CIÊNCIA DE DADOS */}
       <div className="row g-3 mb-3">
-
+        {/* ESTATÍSTICAS DESCRITIVAS */}
         <div className="col-12 col-xl-4">
-          <CaixaTeste
-            titulo="Estatísticas Descritivas"
-            altura={240}
+          <EstatisticasDescritivas
+            metalicas={estatisticasProducao.metalicas}
+            naoMetalicas={estatisticasProducao.naoMetalicas}
+            estoque={dados.estatisticas_reservatorio}
           />
         </div>
 
+        {/* HISTOGRAMA RESERVATÓRIO */}
         <div className="col-12 col-md-6 col-xl-4">
-          <CaixaTeste
-            titulo="Histograma do Estoque"
-            altura={240}
-          />
+          <HistogramaReservatorio dados={dados.histograma_reservatorio} />
         </div>
 
+        {/* BOXPLOT DO ESTOQUE */}
         <div className="col-12 col-md-6 col-xl-4">
-          <CaixaTeste
-            titulo="Boxplot do Estoque"
-            altura={240}
-          />
+          <BoxplotReservatorio dados={dados.boxplot_reservatorio} />
         </div>
-
       </div>
 
       {/* RODAPÉ */}
-      <CaixaTeste
-        titulo="Rodapé"
-        altura={50}
-      />
-
+      <Rodape online={online} ultimaAtualizacao={ultimaAtualizacao} />
     </div>
   );
 }

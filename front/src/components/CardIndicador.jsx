@@ -1,28 +1,31 @@
-
 import "../styles/CardIndicador.css";
 
-function CardIndicador({ titulo, valor, icone, cor = "azul", legenda }) {
-  const valorExibido =
-    valor === null || valor === undefined
-      ? "—"
-      : typeof valor === "number"
-        ? valor.toLocaleString("pt-BR")
-        : valor;
+function CardIndicador(props) {
+  var cor = props.cor || "azul";
+  var valor = props.valor;
+
+  // sem dado ainda: mostra um traço, e não um zero inventado
+  var valorExibido = "—";
+  if (typeof valor === "number") {
+    valorExibido = valor.toLocaleString("pt-BR");
+  } else if (valor !== null && valor !== undefined) {
+    valorExibido = valor;
+  }
 
   return (
     <section className="mt-card mt-indicador">
-      <div className={`mt-indicador-icone ${cor}`}>
-        {icone}
+      <div className={"mt-indicador-icone " + cor}>
+        {props.icone}
       </div>
 
       <div className="mt-indicador-texto">
-        <span className="mt-indicador-titulo">{titulo}</span>
+        <span className="mt-indicador-titulo">{props.titulo}</span>
 
         <div className="mt-indicador-linha">
           <strong>{valorExibido}</strong>
         </div>
 
-        {legenda && <small>{legenda}</small>}
+        {props.legenda && <small>{props.legenda}</small>}
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ function prepararDados(lista) {
 
 // cada item da lista: { hora: "08h", metalicas: 120, nao_metalicas: 80 }
 function GraficoProducao(props) {
-  var dados = props.dados || [];
+  var dados = prepararDados(props.dados);
 
   return (
     <section className="mt-card mt-grafico">

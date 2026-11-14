@@ -1,0 +1,37 @@
+
+.mt-histograma {
+  height: 100%;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mt-histograma-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.mt-histograma-area {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 190px;
+  height: 190px;
+}
+
+.mt-histograma-vazio {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed rgba(148, 163, 184, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-size: 13px;
+}

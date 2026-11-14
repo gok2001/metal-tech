@@ -1,9 +1,17 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   min-height: 100%;
 }
 
 body {
   min-height: 100vh;
+  margin: 0;
   background-color: #03070d;
   background-image: linear-gradient(180deg, #0a1a2a 0%, #03070d 100%);
   background-attachment: fixed;
@@ -11,18 +19,22 @@ body {
   font-family: "Segoe UI", Roboto, sans-serif;
 }
 
+/* ---------- página principal ---------- */
 .mt-pagina {
-  max-width: 1400px;
+  width: 96%;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 16px 12px;
 }
 
+/* ---------- cards ---------- */
 .mt-card {
   background: linear-gradient(180deg, #08131f, #050c14);
   border: 1px solid rgba(34, 224, 138, 0.25);
   border-radius: 10px;
   padding: 18px 20px;
   margin-bottom: 16px;
+  min-width: 0;
 }
 
 /* ---------- cabeçalho ---------- */
@@ -142,9 +154,10 @@ body {
   border-radius: 10px;
   color: #64748b;
   font-size: 13px;
+  min-width: 0;
 }
 
-/* ---------- telas médias: barra de RA desce pra uma linha própria ---------- */
+/* ---------- telas médias ---------- */
 @media (max-width: 1199px) {
   .mt-header {
     flex-wrap: wrap;
@@ -158,6 +171,15 @@ body {
 
 /* ---------- celular ---------- */
 @media (max-width: 576px) {
+  .mt-pagina {
+    width: 100%;
+    padding: 12px 8px;
+  }
+
+  .mt-card {
+    padding: 14px 12px;
+  }
+
   .mt-header {
     gap: 8px;
   }
@@ -193,7 +215,8 @@ body {
     width: 100%;
     justify-content: center;
   }
+
   .mt-ra-texto strong {
-  font-size: 14px;
-}
+    font-size: 14px;
+  }
 }
