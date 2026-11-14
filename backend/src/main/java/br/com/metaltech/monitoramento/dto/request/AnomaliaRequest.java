@@ -19,7 +19,6 @@ public record AnomaliaRequest(
     @NotBlank 
     String equipamento,
 
-    @NotBlank 
     @Pattern(regexp = "METALICA|NAO_METALICA") 
     @JsonProperty("tipo_reservatorio")
     String tipoReservatorio,
