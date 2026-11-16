@@ -31,7 +31,7 @@ public class ContagemIntervaloController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    @GetMapping("/api/contagens") 
+    @GetMapping("/api/v1/analytics/production") 
     public List<ContagemIntervaloHistoricoResponse> listarHistorico() {
         return contagemService.listarHistorico();
     }
