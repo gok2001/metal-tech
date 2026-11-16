@@ -20,12 +20,12 @@ public record ContagemIntervaloRequest(
 
     @NotNull 
     @PositiveOrZero 
-    @JsonProperty("quantidade_metalicas") 
+    @JsonProperty("pecas_metalicas") 
     Integer quantidadeMetalicas,
 
     @NotNull 
     @PositiveOrZero 
-    @JsonProperty("quantidade_nao_metalicas") 
+    @JsonProperty("pecas_nao_metalicas") 
     Integer quantidadeNaoMetalicas
 ) {
 
