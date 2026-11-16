@@ -177,3 +177,31 @@ class CSVManager:
                 escritor.writerow(registro_erro)
 
         return True
+
+    def listar_eventos(self):
+        """Carrega os eventos preservados nos CSVs, em ordem cronológica."""
+        eventos = []
+        if not self.diretorio_base.exists():
+            return eventos
+
+        for caminho in sorted(self.diretorio_base.glob("**/leituras.csv")):
+            with open(caminho, "r", newline="", encoding="utf-8") as arquivo:
+                for linha in csv.DictReader(arquivo):
+                    try:
+                        evento = json.loads(linha.get("payload_json", "{}"))
+                    except (TypeError, json.JSONDecodeError):
+                        continue
+                    if isinstance(evento, dict):
+                        eventos.append(evento)
+
+        def chave_cronologica(evento):
+            timestamp = evento.get("timestamp")
+            try:
+                data = datetime.fromisoformat(timestamp.replace("Z", "+00:00"))
+                if data.tzinfo is None or data.utcoffset() is None:
+                    return datetime.max.replace(tzinfo=timezone.utc)
+                return data.astimezone(timezone.utc)
+            except (AttributeError, TypeError, ValueError):
+                return datetime.max.replace(tzinfo=timezone.utc)
+
+        return sorted(eventos, key=chave_cronologica)

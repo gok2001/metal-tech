@@ -12,11 +12,11 @@ def _validar_leitura(leitura):
     if not isinstance(leitura, dict):
         return False
 
-    identificador = leitura.get("eventId")
+    identificador = leitura.get("id", leitura.get("eventId"))
     reservatorio = leitura.get("reservatorioId")
     timestamp = leitura.get("timestamp")
     nivel = leitura.get("nivel")
-    capacidade = leitura.get("capacidade")
+    capacidade = leitura.get("capacidade")  # Campo legado e opcional.
 
     if not isinstance(identificador, str) or not identificador.strip():
         return False
@@ -41,14 +41,18 @@ def _validar_leitura(leitura):
     if isinstance(nivel, bool) or not isinstance(nivel, (int, float)):
         return False
 
-    if not math.isfinite(nivel) or not 0 <= nivel <= 100:
+    if not math.isfinite(nivel) or nivel < 0:
         return False
 
-    if isinstance(capacidade, bool) or not isinstance(capacidade, (int, float)):
-        return False
-
-    if not math.isfinite(capacidade) or capacidade <= 0:
-        return False
+    # Eventos legados com capacidade eram percentuais (0 a 100).
+    # O contrato atual não informa capacidade nem assume percentual.
+    if capacidade is not None:
+        if nivel > 100:
+            return False
+        if isinstance(capacidade, bool) or not isinstance(capacidade, (int, float)):
+            return False
+        if not math.isfinite(capacidade) or capacidade <= 0:
+            return False
 
     return True
 
@@ -72,7 +76,7 @@ def analisar_reservatorio(leituras):
         if not _validar_leitura(leitura):
             continue
 
-        identificador = leitura["eventId"]
+        identificador = leitura.get("id", leitura.get("eventId"))
 
         if identificador in identificadores:
             continue
@@ -107,22 +111,24 @@ def analisar_reservatorio(leituras):
         leitura = leituras_validas[indice]
 
         outliers.append({
-            "eventId": leitura["eventId"],
+            "id": leitura.get("id", leitura.get("eventId")),
             "timestamp": leitura["timestamp"],
             "nivel": anomalia["valor"],
             "limiteInferior": anomalia["limiteInferior"],
             "limiteSuperior": anomalia["limiteSuperior"]
         })
 
-    return {
+    resultado = {
         "reservatorioId": ultima_leitura["reservatorioId"],
         "nivelAtual": ultima_leitura["nivel"],
-        "capacidade": ultima_leitura["capacidade"],
         "ultimaAtualizacao": ultima_leitura["timestamp"],
         "quantidadeLeituras": len(leituras_validas),
         "estatisticas": estatisticas,
         "outliers": outliers
     }
+    if "capacidade" in ultima_leitura:
+        resultado["capacidade"] = ultima_leitura["capacidade"]
+    return resultado
 
 
 def analisar_reservatorios(leituras):
