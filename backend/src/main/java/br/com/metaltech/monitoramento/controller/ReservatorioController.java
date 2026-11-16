@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController 
-@RequestMapping("/api/reservatorios") 
+@RequestMapping("/api/v1/analytics/reservoirs") 
 public class ReservatorioController {
     
     private final ReservatorioService reservatorioService;
