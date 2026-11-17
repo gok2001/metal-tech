@@ -1,4 +1,4 @@
-import logoIcone from "../target/logo-icone.png";
+import logoIcone from "../images/logo-icone.png";
 
 
 import {
