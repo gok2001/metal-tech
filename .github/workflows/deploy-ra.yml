@@ -31,9 +31,11 @@ jobs:
           cache: npm
           cache-dependency-path: realidade-aumentada/package-lock.json
 
+      
       - name: Instalar dependencias
         working-directory: realidade-aumentada
-        run: npm ci --ignore-scripts
+        run: npm install --ignore-scripts
+
 
       - name: Compilar React
         working-directory: realidade-aumentada
