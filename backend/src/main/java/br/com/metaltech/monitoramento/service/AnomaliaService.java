@@ -1,10 +1,12 @@
 package br.com.metaltech.monitoramento.service;
 
 import br.com.metaltech.monitoramento.dto.request.AnomaliaRequest;
+import br.com.metaltech.monitoramento.dto.response.AnomaliaResponse;
 import br.com.metaltech.monitoramento.entity.Anomalia;
 import br.com.metaltech.monitoramento.repository.AnomaliaRepository;
 
 import java.time.ZoneOffset;
+import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -41,5 +43,22 @@ public class AnomaliaService {
         );
 
         anomaliaRepository.save(anomalia);
+    }
+
+    @Transactional(readOnly = true) 
+    public List<AnomaliaResponse> listarTodas() {
+        return anomaliaRepository.findAllByOrderByDataOcorrenciaDesc()
+            .stream()
+            .map(anomalia -> new AnomaliaResponse(
+                anomalia.getId(),
+                anomalia.getIdOrigem(),
+                anomalia.getTipo(),
+                anomalia.getEquipamento(),
+                anomalia.getTipoReservatorio(),
+                anomalia.getDescricao(),
+                anomalia.getSeveridade(),
+                anomalia.getDataOcorrencia()
+            ))
+            .toList();
     }
 }

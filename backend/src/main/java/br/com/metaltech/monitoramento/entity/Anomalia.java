@@ -66,4 +66,36 @@ public class Anomalia {
         this.severidade = severidade;
         this.dataOcorrencia = dataOcorrencia;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getIdOrigem() {
+        return idOrigem;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public String getEquipamento() {
+        return equipamento;
+    }
+
+    public String getTipoReservatorio() {
+        return tipoReservatorio;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public String getSeveridade() {
+        return severidade;
+    }
+
+    public LocalDateTime getDataOcorrencia() {
+        return dataOcorrencia;
+    }
 }
