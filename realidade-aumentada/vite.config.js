@@ -8,7 +8,14 @@ export default defineConfig(({ command }) => ({
   base: command === "build" ? "/metal-tech/" : "/",
 
   server: {
-    host: "localhost",
-    port: 5173,
+    port: 5174,
+    strictPort: true,
+
+    proxy: {
+      "/api": {
+        target: "http://10.110.12.57:8080",
+        changeOrigin: true,
+      },
+    },
   },
 }));

@@ -2,12 +2,18 @@
 import { useEffect, useRef, useState } from "react";
 import { MindARThree } from "mind-ar/dist/mindar-image-three.prod.js";
 
-// Tempo de tolerância ao perder a imagem
+// Tempo de tolerância ao perder o reconhecimento
 const TEMPO_TOLERANCIA = 1000;
+
+// Endereço do Dashboard
+const DASHBOARD_URL =
+  import.meta.env.VITE_DASHBOARD_URL ||
+  "http://localhost:5173/";
 
 export default function CameraAR({ onDetected }) {
   const containerRef = useRef(null);
   const mindarRef = useRef(null);
+
   const iniciandoRef = useRef(false);
   const onDetectedRef = useRef(onDetected);
 
@@ -18,10 +24,12 @@ export default function CameraAR({ onDetected }) {
   const [iniciado, setIniciado] = useState(false);
   const [carregando, setCarregando] = useState(false);
 
+  // Mantém a função de detecção atualizada
   useEffect(() => {
     onDetectedRef.current = onDetected;
   }, [onDetected]);
 
+  // Cancela o temporizador de tolerância
   function cancelarTimeout() {
     if (timeoutRef.current !== null) {
       clearTimeout(timeoutRef.current);
@@ -29,6 +37,7 @@ export default function CameraAR({ onDetected }) {
     }
   }
 
+  // Libera recursos ao desmontar
   useEffect(() => {
     return () => {
       if (timeoutRef.current !== null) {
@@ -43,10 +52,17 @@ export default function CameraAR({ onDetected }) {
 
         mindarRef.current = null;
         mindar.renderer.setAnimationLoop(null);
-        mindar.stop();
+
+        Promise.resolve(mindar.stop()).catch((erro) => {
+          console.error("Erro ao liberar câmera:", erro);
+        });
       }
     };
   }, []);
+
+  // =====================================
+  // INICIAR CÂMERA
+  // =====================================
 
   async function iniciarCamera() {
     if (
@@ -58,6 +74,7 @@ export default function CameraAR({ onDetected }) {
     }
 
     iniciandoRef.current = true;
+
     setCarregando(true);
     setStatus("Iniciando câmera...");
 
@@ -69,7 +86,10 @@ export default function CameraAR({ onDetected }) {
     try {
       mindar = new MindARThree({
         container: containerRef.current,
-        imageTargetSrc: `${import.meta.env.BASE_URL}target/esteira.mind`,
+
+        imageTargetSrc:
+          `${import.meta.env.BASE_URL}target/esteira.mind`,
+
         maxTrack: 1,
         filterMinCF: 0.001,
         filterBeta: 1000,
@@ -78,9 +98,13 @@ export default function CameraAR({ onDetected }) {
       mindarRef.current = mindar;
 
       const { renderer, scene, camera } = mindar;
+
       const anchor = mindar.addAnchor(0);
 
+      // =====================================
       // ESTEIRA RECONHECIDA
+      // =====================================
+
       anchor.onTargetFound = () => {
         if (mindarRef.current !== mindar) return;
 
@@ -94,11 +118,12 @@ export default function CameraAR({ onDetected }) {
         onDetectedRef.current?.(true);
       };
 
+      // =====================================
       // RECONHECIMENTO PERDIDO
+      // =====================================
+
       anchor.onTargetLost = () => {
         if (mindarRef.current !== mindar) return;
-
-        console.log("Reconhecimento temporariamente perdido");
 
         detectadaRef.current = false;
 
@@ -106,7 +131,6 @@ export default function CameraAR({ onDetected }) {
 
         setStatus("Verificando esteira...");
 
-        // Aguarda antes de esconder os cards
         timeoutRef.current = setTimeout(() => {
           timeoutRef.current = null;
 
@@ -117,14 +141,16 @@ export default function CameraAR({ onDetected }) {
             return;
           }
 
-          console.log("Esteira não detectada");
-
           setStatus("Procurando esteira...");
           onDetectedRef.current?.(false);
+
         }, TEMPO_TOLERANCIA);
       };
 
-      // INICIA A CÂMERA
+      // =====================================
+      // ATIVAR MINDAR
+      // =====================================
+
       await mindar.start();
 
       if (mindarRef.current !== mindar) {
@@ -132,14 +158,14 @@ export default function CameraAR({ onDetected }) {
         return;
       }
 
-      // MANTÉM O AJUSTE FULLSCREEN
+      // Ajusta a câmera para o contêiner
       requestAnimationFrame(() => {
         if (mindarRef.current === mindar) {
           mindar.resize();
         }
       });
 
-      // RENDERIZAÇÃO
+      // Renderização contínua
       renderer.setAnimationLoop(() => {
         renderer.render(scene, camera);
       });
@@ -153,6 +179,7 @@ export default function CameraAR({ onDetected }) {
       );
 
       console.log("Câmera iniciada com sucesso!");
+
     } catch (erro) {
       console.error("Erro ao iniciar MindAR:", erro);
 
@@ -180,16 +207,20 @@ export default function CameraAR({ onDetected }) {
       if (mindarRef.current === mindar) {
         mindarRef.current = null;
       }
+
     } finally {
       iniciandoRef.current = false;
       setCarregando(false);
     }
   }
 
+  // =====================================
+  // PARAR CÂMERA
+  // =====================================
+
   async function pararCamera() {
     if (iniciandoRef.current) return;
 
-    // Cancela qualquer espera pendente
     cancelarTimeout();
     detectadaRef.current = false;
 
@@ -197,7 +228,6 @@ export default function CameraAR({ onDetected }) {
 
     if (mindar) {
       mindarRef.current = null;
-
       mindar.renderer.setAnimationLoop(null);
 
       try {
@@ -207,25 +237,33 @@ export default function CameraAR({ onDetected }) {
       }
     }
 
-    // Esconde imediatamente os cards ao parar
     onDetectedRef.current?.(false);
 
     setIniciado(false);
     setStatus("Câmera desligada");
   }
 
+  // =====================================
+  // INTERFACE
+  // =====================================
+
   return (
     <div className="camera-ar">
+
+      {/* Área da câmera */}
       <div
         ref={containerRef}
         className="camera-container"
       />
 
+      {/* Controles e navegação */}
       <div className="camera-controles">
+
         <p>{status}</p>
 
         {!iniciado ? (
           <button
+            type="button"
             onClick={iniciarCamera}
             disabled={carregando}
           >
@@ -234,11 +272,24 @@ export default function CameraAR({ onDetected }) {
               : "Iniciar câmera"}
           </button>
         ) : (
-          <button onClick={pararCamera}>
+          <button
+            type="button"
+            onClick={pararCamera}
+          >
             Parar câmera
           </button>
         )}
+
+        <a
+          href={DASHBOARD_URL}
+          className="voltar-dashboard"
+          aria-label="Voltar ao Dashboard"
+        >
+          Voltar
+        </a>
+
       </div>
+
     </div>
   );
 }

@@ -4,15 +4,14 @@ import { useEffect, useState } from "react";
 import CameraAR from "./components/CameraAR";
 import CardsInformativos from "./components/CardsInformativos";
 import ElementosFixos from "./components/ElementosFixos";
-import "./styles/ElementosFixosHud.css";
+
 import "./App.css";
+import "./styles/ElementosFixosHud.css";
 
 import {
   buscarDados,
   apiConfigurada,
 } from "./services/api";
-
-import "./App.css";
 
 const INTERVALO_ATUALIZACAO = 5000;
 
@@ -23,7 +22,7 @@ export default function App() {
   const [conexao, setConexao] = useState("aguardando");
 
   useEffect(() => {
-    // Não realiza requisições enquanto não houver API.
+    // Não busca dados enquanto a API não estiver configurada.
     if (!apiConfigurada()) return;
 
     let ativo = true;
