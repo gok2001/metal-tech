@@ -12,9 +12,8 @@ while True:
             if response.status_code == 200:
                 dados = response.json()
 
-                valor_em_hex = dados["data"]["value"]
+                valor = dados["data"]["value"]
 
-                valor_decimal = int(valor_em_hex, 16)
 
                 if(port == 1):
                     sensor = "Distância"
@@ -30,5 +29,5 @@ while True:
             print(f"Erro ao ler {port}: {e}")
 
     print("-" * 30)
-    time.sleep(1)
+    time.sleep(5)
     
