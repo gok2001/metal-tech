@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import CameraAR from "./components/CameraAR";
 import CardsInformativos from "./components/CardsInformativos";
 import ElementosFixos from "./components/ElementosFixos";
-import "./styles/ElementosFixosHUD.css";
+import "./styles/ElementosFixosHud.css";
 import "./App.css";
 
 import {
