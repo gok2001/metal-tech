@@ -1,7 +1,10 @@
 
 const API_BASE = "/api/v1/analytics";
 
-// Consulta um endpoint que retorna uma lista
+// ==========================================
+// CONSULTAR ENDPOINTS DO BACKEND
+// ==========================================
+
 async function consultarLista(caminho) {
   const resposta = await fetch(`${API_BASE}${caminho}`, {
     method: "GET",
@@ -28,7 +31,10 @@ async function consultarLista(caminho) {
   return dados;
 }
 
-// Aceita apenas números válidos
+// ==========================================
+// VALIDAR VALORES
+// ==========================================
+
 function numeroNaoNegativo(valor) {
   return typeof valor === "number" &&
     Number.isFinite(valor) &&
@@ -37,7 +43,10 @@ function numeroNaoNegativo(valor) {
     : null;
 }
 
-// Converte a data UTC do Back-End
+// ==========================================
+// CONVERTER DATA UTC
+// ==========================================
+
 function interpretarDataUtc(valor) {
   if (typeof valor !== "string" || !valor) {
     return null;
@@ -59,10 +68,15 @@ const formatadorHora = new Intl.DateTimeFormat("pt-BR", {
   minute: "2-digit",
 });
 
-// Prepara os dados da produção
+// ==========================================
+// PREPARAR DADOS DA PRODUÇÃO
+// ==========================================
+
 function prepararProducao(lista) {
   const registros = lista.map((item) => {
-    const data = interpretarDataUtc(item?.inicioIntervalo);
+    const data = interpretarDataUtc(
+      item?.inicioIntervalo
+    );
 
     const metalicas = numeroNaoNegativo(
       item?.quantidadeMetalicas
@@ -86,16 +100,15 @@ function prepararProducao(lista) {
       data,
       metalicas,
       naoMetalicas,
-      totalAcumulado: numeroNaoNegativo(item.totalPecas),
     };
   });
 
-  // Organiza pelo horário
+  // Organiza os registros por horário
   registros.sort(
     (a, b) => a.data.getTime() - b.data.getTime()
   );
 
-  // Ainda não existem leituras
+  // Sem leituras: não inventa valores
   if (registros.length === 0) {
     return {
       total_pecas: null,
@@ -105,25 +118,24 @@ function prepararProducao(lista) {
     };
   }
 
-  // Soma as contagens dos intervalos
+  // Soma todas as peças metálicas
   const totalMetalicas = registros.reduce(
     (soma, item) => soma + item.metalicas,
     0
   );
 
+  // Soma todas as peças não metálicas
   const totalNaoMetalicas = registros.reduce(
     (soma, item) => soma + item.naoMetalicas,
     0
   );
 
-  // Utiliza o último total acumulado informado
-  // pelo Back-End, quando disponível.
-  const totalAcumulado =
-    registros[registros.length - 1].totalAcumulado;
+  // CORREÇÃO: total geral é a soma das duas categorias
+  const totalPecas =
+    totalMetalicas + totalNaoMetalicas;
 
   return {
-    total_pecas:
-      totalAcumulado ?? totalMetalicas + totalNaoMetalicas,
+    total_pecas: totalPecas,
 
     pecas_metalicas: totalMetalicas,
 
@@ -137,7 +149,10 @@ function prepararProducao(lista) {
   };
 }
 
-// Prepara os dados dos reservatórios
+// ==========================================
+// PREPARAR DADOS DOS RESERVATÓRIOS
+// ==========================================
+
 function prepararReservatorios(lista) {
   const metalico = lista.find(
     (item) => item?.tipoPeca === "METALICA"
@@ -162,7 +177,10 @@ function prepararReservatorios(lista) {
   };
 }
 
-// Função utilizada pelo Dashboard.jsx
+// ==========================================
+// BUSCAR DADOS REAIS DO BACKEND
+// ==========================================
+
 export async function buscarDados() {
   try {
     // Consulta os dois endpoints
@@ -171,9 +189,10 @@ export async function buscarDados() {
       consultarLista("/reservoirs"),
     ]);
 
-    // Entrega os dados no formato do Front-End
+    // Prepara os dados para o Dashboard
     return {
       ...prepararProducao(producao),
+
       ...prepararReservatorios(reservatorios),
 
       ultima_atualizacao: new Date(),

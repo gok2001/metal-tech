@@ -16,7 +16,7 @@ import { buscarDados } from "../services/api.js";
 
 import { Box, Settings, Recycle } from "lucide-react";
 
-var CAMINHO_RA = "";
+var CAMINHO_RA = "http://localhost:5174";
 
 function Dashboard() {
   var [online, setOnline] = useState(false);
