@@ -69,7 +69,7 @@ export default function CameraAR({ onDetected }) {
     try {
       mindar = new MindARThree({
         container: containerRef.current,
-        imageTargetSrc: "/target/esteira.mind",
+        imageTargetSrc: `${import.meta.env.BASE_URL}target/esteira.mind`,
         maxTrack: 1,
         filterMinCF: 0.001,
         filterBeta: 1000,
