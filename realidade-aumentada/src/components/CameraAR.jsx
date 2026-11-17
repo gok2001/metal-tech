@@ -88,7 +88,7 @@ export default function CameraAR({ onDetected }) {
         container: containerRef.current,
 
         imageTargetSrc:
-          `${import.meta.env.BASE_URL}target/esteira.mind`,
+          `${import.meta.env.BASE_URL}alvo/esteira.mind`,
 
         maxTrack: 1,
         filterMinCF: 0.001,
