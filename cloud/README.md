@@ -1,4 +1,4 @@
-# Docker# Execução local com Docker Compose
+# Execução local com Docker Compose
 
 Este ambiente inicia o MySQL e a API de monitoramento em containers.
 
