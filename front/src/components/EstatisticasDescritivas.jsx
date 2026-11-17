@@ -1,7 +1,7 @@
 import { ChartColumn } from "lucide-react";
 import "../styles/EstatisticasDescritivas.css";
 
-// número com 1 casa decimal e vírgula (125.4 vira "125,4"). Sem dado vira "—".
+// número com 1 casa decimal e vírgula sem dado vira "-"
 function formatarNumero(valor) {
   if (typeof valor !== "number" || !isFinite(valor)) {
     return "—";
@@ -10,6 +10,7 @@ function formatarNumero(valor) {
 }
 
 // a moda chega como LISTA (pode ter vários valores ou nenhum)
+
 function formatarModa(lista) {
   if (!Array.isArray(lista) || lista.length === 0) {
     return "—";
@@ -22,7 +23,7 @@ function formatarModa(lista) {
 }
 
 // transforma o objeto de estatísticas nas linhas que aparecem na tela.
-// Se o back mandar com outros nomes de campo, é só mudar AQUI.
+
 function montarLinhas(estatisticas) {
   var e = estatisticas || {};
   var q = e.quartis || {};

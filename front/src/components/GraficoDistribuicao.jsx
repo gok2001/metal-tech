@@ -16,6 +16,7 @@ function GraficoDistribuicao(props) {
   var soma = metalicas + naoMetalicas;
 
   // protecao porcentagem em 0
+
   var pctMetalicas = 0;
   var pctNaoMetalicas = 0;
   if (soma > 0) {
@@ -24,6 +25,7 @@ function GraficoDistribuicao(props) {
   }
 
   // dados do grafico desenhado
+
   var dadosGrafico = [
     { name: "Metálicas", value: metalicas },
     { name: "Não metálicas", value: naoMetalicas }
@@ -41,7 +43,6 @@ function GraficoDistribuicao(props) {
   if (total === undefined || total === null) {
     total = soma;
   }
-
 
   // Grafico feito com I.A
   

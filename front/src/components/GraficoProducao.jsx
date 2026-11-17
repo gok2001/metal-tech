@@ -14,7 +14,7 @@ var COR_METALICAS = "#2d8cff";
 var COR_NAO_METALICAS = "#f59e0b";
 
 // Converte o que chegar da API pro formato do gráfico.
-// Se o back mandar com outros nomes de campo, é só mudar AQUI.
+
 function prepararDados(lista) {
   var resultado = [];
   if (!Array.isArray(lista)) {
@@ -31,10 +31,10 @@ function prepararDados(lista) {
   return resultado;
 }
 
-// cada item da lista: { hora: "08h", metalicas: 120, nao_metalicas: 80 }
 function GraficoProducao(props) {
   var dados = prepararDados(props.dados);
 
+  // grafico feito com auxilio de i.a
   return (
     <section className="mt-card mt-grafico">
       <div className="mt-grafico-topo">

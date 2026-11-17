@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 import Header from "./Header.jsx";
-import CaixaTeste from "./CaixaTeste.jsx";
 import CardIndicador from "./CardIndicador.jsx";
 import CardOcupacao from "./CardOcupacao.jsx";
 

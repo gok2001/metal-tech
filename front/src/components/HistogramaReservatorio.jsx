@@ -13,7 +13,7 @@ import {
 
 import "../styles/HistogramaReservatorio.css";
 
-// Prepara os intervalos recebidos da API
+// prepara os intervalos recebidos da API
 function prepararDados(lista) {
   if (!Array.isArray(lista)) return [];
 
