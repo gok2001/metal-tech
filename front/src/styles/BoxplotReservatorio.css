@@ -1,0 +1,74 @@
+
+.mt-boxplot {
+  height: 100%;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mt-boxplot-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mt-boxplot-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.mt-boxplot-vazio {
+  width: 100%;
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(148, 163, 184, 0.3);
+  border-radius: 10px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.mt-boxplot-svg {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  overflow: visible;
+}
+
+.mt-boxplot-legenda {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.mt-boxplot-legenda div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  text-align: center;
+}
+
+.mt-boxplot-legenda span {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.mt-boxplot-legenda strong {
+  color: #22e08a;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
