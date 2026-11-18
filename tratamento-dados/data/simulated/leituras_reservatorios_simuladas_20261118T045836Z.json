@@ -1,0 +1,2616 @@
+{
+  "loteId": "LOTE-SIM-RES-20261118T045836Z-34435122",
+  "equipamento": "ESTEIRA-01",
+  "enviadoEm": "2026-11-18T04:58:36Z",
+  "intervaloSegundos": 5,
+  "leituras": [
+    {
+      "id": "SIM-METALICA-609fb1ad9cff4e9eaa42471f2fa3a00d",
+      "timestamp": "2026-11-18T04:45:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 76.42,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-de7611b1f3e745efbb106c2417fe3253",
+      "timestamp": "2026-11-18T04:45:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 42.98,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-fd2e528f86724c388e91e512cb52bd8b",
+      "timestamp": "2026-11-18T04:45:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 77.38,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-79008710fde24390858817989a4431d0",
+      "timestamp": "2026-11-18T04:45:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 43.7,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-b99235fb05a042b289c7c277dee84e49",
+      "timestamp": "2026-11-18T04:45:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 78.37,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-e2091b2bec994a0cb4ce43405e9db034",
+      "timestamp": "2026-11-18T04:45:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 44.45,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-052fa9794c104d84a365a810c07f86ba",
+      "timestamp": "2026-11-18T04:45:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 79.39,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-4b33b041e2e64786b819bb21b33da1fc",
+      "timestamp": "2026-11-18T04:45:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 45.23,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-74e6a75fa32e46ffa5c0f18f9727fc4c",
+      "timestamp": "2026-11-18T04:45:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 80.44,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-61c4c807adb34449bddf67a2dd4658c3",
+      "timestamp": "2026-11-18T04:45:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 46.04,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-bae216bf9f9e4257b58963d103275b02",
+      "timestamp": "2026-11-18T04:45:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 81.51,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-5e5fcecb373a481c8d627d09953ec3a4",
+      "timestamp": "2026-11-18T04:45:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 46.87,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-f2ebebe9af35486392f27a9963670ee5",
+      "timestamp": "2026-11-18T04:45:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 82.6,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8eb6a1e2b9cf4410bf2729ec32b2e977",
+      "timestamp": "2026-11-18T04:45:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 47.72,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-239e42152b4242fa9d577e06b3a36e89",
+      "timestamp": "2026-11-18T04:45:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 83.7,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-eda62f43374742b78ff23419bf41f041",
+      "timestamp": "2026-11-18T04:45:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 48.58,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-54a23720751a4dd2887606b98f03b8e4",
+      "timestamp": "2026-11-18T04:45:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 84.8,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-15bde97ee25046a484fc7d675156a1bb",
+      "timestamp": "2026-11-18T04:45:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 49.44,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-fe6b7e0ccc074ed0ad69a98bae0b1928",
+      "timestamp": "2026-11-18T04:45:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 85.9,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-9d35b676f3694840a924faac7508b9af",
+      "timestamp": "2026-11-18T04:45:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 50.3,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-4536c1c9817448edb4b673a158710c10",
+      "timestamp": "2026-11-18T04:45:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 86.98,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-f3ee053791854f33b6cdc0269cc155b6",
+      "timestamp": "2026-11-18T04:45:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 51.14,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-18a50c23adff482d891cd4351a153a3e",
+      "timestamp": "2026-11-18T04:46:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 88.05,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-702eb2d7326a454bb28fe5ce10258fc2",
+      "timestamp": "2026-11-18T04:46:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 51.97,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-a51d4f8cb19048afb99bbc637ad335e9",
+      "timestamp": "2026-11-18T04:46:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 89.09,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c3f8e2259874421a87374438f98fbf41",
+      "timestamp": "2026-11-18T04:46:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 52.77,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-052238d855604d348a2ba4afa0f505a6",
+      "timestamp": "2026-11-18T04:46:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 90.1,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-fd86afbcba2d411880a3d63aebcd39c3",
+      "timestamp": "2026-11-18T04:46:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 53.54,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-d7ec5033f1cc451f8d62eaa4da1c965e",
+      "timestamp": "2026-11-18T04:46:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 91.08,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-9ef6abebb3554fe09111b6f05581427c",
+      "timestamp": "2026-11-18T04:46:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 54.28,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-9132f5d822ef406bb4f1026334748995",
+      "timestamp": "2026-11-18T04:46:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 92.03,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d3da8439031f4fca8796ab5be8114b53",
+      "timestamp": "2026-11-18T04:46:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 54.99,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-864c46ea6a604ea2a908fee64ffb3b01",
+      "timestamp": "2026-11-18T04:46:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 92.94,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c19b9334802e4056b04cb922d91975b0",
+      "timestamp": "2026-11-18T04:46:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 55.66,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-1d1fedd194194f478e52cf549a67ec27",
+      "timestamp": "2026-11-18T04:46:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 93.81,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-703cafde72904d0f9b2dd43b79d5b8fe",
+      "timestamp": "2026-11-18T04:46:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 56.29,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-206992f61dce401a8f47033d8526e2be",
+      "timestamp": "2026-11-18T04:46:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 94.65,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-271cb641fd764831ac1321bad7e63b03",
+      "timestamp": "2026-11-18T04:46:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 56.89,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e7a174c7b1304eb8bc9c70c898c72282",
+      "timestamp": "2026-11-18T04:46:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 95.46,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-752f699544f24cf1b5126702cbeb99be",
+      "timestamp": "2026-11-18T04:46:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 57.46,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e86d191d75c048ad82f9fd49896328cf",
+      "timestamp": "2026-11-18T04:46:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 96.24,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-1813a69d5dbe44279d1ef0b665edec60",
+      "timestamp": "2026-11-18T04:46:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 58.0,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-7f6490b816c8424487c7ef11c0c20f39",
+      "timestamp": "2026-11-18T04:46:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 97.0,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-f59e6612caef445eac604d58d4b7b667",
+      "timestamp": "2026-11-18T04:46:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 58.52,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-9025c13c75a0456bb7e977bae85fda37",
+      "timestamp": "2026-11-18T04:46:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 97.75,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d25376c3a2b14786b5ee6a4d067168ae",
+      "timestamp": "2026-11-18T04:46:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 59.03,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-0f26565fc3684805931566a99d13c25c",
+      "timestamp": "2026-11-18T04:47:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 98.49,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-512aaa87292f4ab59491c06e30d586e6",
+      "timestamp": "2026-11-18T04:47:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 59.53,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-8a740501db1a40b39e35887656a72ee1",
+      "timestamp": "2026-11-18T04:47:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 99.23,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c2fa45b0a6914499bfe36057eb1184d8",
+      "timestamp": "2026-11-18T04:47:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 60.03,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-0b8c9658b0de4db3b2c621cdc479f96e",
+      "timestamp": "2026-11-18T04:47:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 99.98,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-18c477f9b8854f7f8fe359fc5bc51a9c",
+      "timestamp": "2026-11-18T04:47:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 60.54,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-566fa3f7bee24799a3829ae66697397b",
+      "timestamp": "2026-11-18T04:47:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 100.74,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-3e482ac893a74d7aa07e404333f4c681",
+      "timestamp": "2026-11-18T04:47:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 61.06,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-f02032286bbc4a6b9169705622406138",
+      "timestamp": "2026-11-18T04:47:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 101.52,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-3447f6c1264d4533a8180e5db3721c64",
+      "timestamp": "2026-11-18T04:47:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 61.6,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-231bc45e6759439b89b89141448eaccf",
+      "timestamp": "2026-11-18T04:47:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 102.33,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-bd49432797ac450c85e5a7d898e84948",
+      "timestamp": "2026-11-18T04:47:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 62.17,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-6e6ae10f05f14482b4e200c5e09f9a79",
+      "timestamp": "2026-11-18T04:47:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 103.17,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8ef7141417e045baad1e4b8dae4432d2",
+      "timestamp": "2026-11-18T04:47:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 62.77,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-bf308dbc40ef44999705c6c302afdbd1",
+      "timestamp": "2026-11-18T04:47:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 104.04,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-0196f9909deb4f81856aae7c38b3ba15",
+      "timestamp": "2026-11-18T04:47:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 63.4,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-bb2146503213408e8b874e72e6670832",
+      "timestamp": "2026-11-18T04:47:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 104.95,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-bdad0c5717ef4096a88b0a7ef017a681",
+      "timestamp": "2026-11-18T04:47:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 64.07,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-fa7a262952c9464fbdab0c236fb4edeb",
+      "timestamp": "2026-11-18T04:47:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 105.89,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-66e775ce27594df19658bd4aca9ee54d",
+      "timestamp": "2026-11-18T04:47:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 64.77,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-5ac6d61ca54145b2804daf164a62d8bd",
+      "timestamp": "2026-11-18T04:47:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 106.87,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-af63a63d189244e29f80d1e142e39dd9",
+      "timestamp": "2026-11-18T04:47:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 65.51,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-f70b69b731ff4c0c84466b6055532e15",
+      "timestamp": "2026-11-18T04:47:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 107.88,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-ba56d4ace86e49a4a49eb0a0ec3c9a7f",
+      "timestamp": "2026-11-18T04:47:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 66.28,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-80409567cfe341cf98747a6efb7e07aa",
+      "timestamp": "2026-11-18T04:48:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 108.92,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-1d590697a1164dfeab20dc8f2378a5a6",
+      "timestamp": "2026-11-18T04:48:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 67.08,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-cf42817097b44795b802ff86cf860721",
+      "timestamp": "2026-11-18T04:48:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 109.98,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-2743b62b90254e55a9730e70857c1068",
+      "timestamp": "2026-11-18T04:48:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 67.9,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-61bf1d81007a45d0bf3e6e758fdf259a",
+      "timestamp": "2026-11-18T04:48:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 111.06,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-ff59cdcdc05a4be6a71bda0388c3d22c",
+      "timestamp": "2026-11-18T04:48:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 68.74,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-5b9f66355a7b4c9087828d9036cbaff4",
+      "timestamp": "2026-11-18T04:48:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 112.15,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-79fca349d7014f3b8e7dc14f145ae075",
+      "timestamp": "2026-11-18T04:48:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 69.59,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-8ca7fbf0dab740fba177ff8e125d662f",
+      "timestamp": "2026-11-18T04:48:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 113.25,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-7d320864b4af4cecafd7a2aefeaf3fcf",
+      "timestamp": "2026-11-18T04:48:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 70.45,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-90a9372c7429426f8824087777fd4f39",
+      "timestamp": "2026-11-18T04:48:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 114.35,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-0af17c1360744161834deb0bf06c92c8",
+      "timestamp": "2026-11-18T04:48:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 71.31,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-39c64ca08c7448908e8815a557a4f548",
+      "timestamp": "2026-11-18T04:48:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 115.44,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-25de011aa7f140b3a0f9275b4c312014",
+      "timestamp": "2026-11-18T04:48:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 72.16,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-9e3a6907eab34c958b8c8ad24208a6c4",
+      "timestamp": "2026-11-18T04:48:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 116.51,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-463b2952655646228836b2ad6eaf7049",
+      "timestamp": "2026-11-18T04:48:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 72.99,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ad622ed94fca490491e0c9a78d71fe1e",
+      "timestamp": "2026-11-18T04:48:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 117.56,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-1d190c1ffd7c4f628b8b54dbed981e03",
+      "timestamp": "2026-11-18T04:48:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 73.8,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ba11f547e9dd439a96fd7d0b188f3079",
+      "timestamp": "2026-11-18T04:48:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 118.59,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-57d5534b619845a1b5f49b207ecc3478",
+      "timestamp": "2026-11-18T04:48:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 74.59,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-1a714a6e2469428ba8f4d35469139c05",
+      "timestamp": "2026-11-18T04:48:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 119.58,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8bb3ee8ca1a7498ba6e850c64ae48a61",
+      "timestamp": "2026-11-18T04:48:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 75.34,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-b704ab44808b4a1797566f63277e88bb",
+      "timestamp": "2026-11-18T04:48:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 120.54,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-95f6de2dae1c4ee19d1b2b68da02f9d3",
+      "timestamp": "2026-11-18T04:48:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 76.06,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-09fc713160dc4b64b397030b200a0b67",
+      "timestamp": "2026-11-18T04:49:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 121.46,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-9e87f88cbf164dd89e1c0ae265abce2e",
+      "timestamp": "2026-11-18T04:49:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 76.74,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e6477fc29350402a875a6b84cfc524c9",
+      "timestamp": "2026-11-18T04:49:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 122.35,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-2a984d0a3a464a18b95be3256b2d7dee",
+      "timestamp": "2026-11-18T04:49:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 77.39,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-b50b6b10b447439f9924c14b474e3755",
+      "timestamp": "2026-11-18T04:49:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 123.2,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-4ac03a95549048ca87045b1ae3f167ae",
+      "timestamp": "2026-11-18T04:49:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 78.0,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-804469f923c546169cc5de378c109663",
+      "timestamp": "2026-11-18T04:49:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 124.02,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-e9f0e25c76b641258259c989acbc3ba0",
+      "timestamp": "2026-11-18T04:49:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 78.58,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-3ff1ce95eb9b48c284d0467f9df80407",
+      "timestamp": "2026-11-18T04:49:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 124.81,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8a0df5bb022945ecbba8237358b4d443",
+      "timestamp": "2026-11-18T04:49:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 79.13,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-5d4040e46b28405e883be3c3f7881921",
+      "timestamp": "2026-11-18T04:49:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 125.58,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-0411034117304274976096bfd040eac2",
+      "timestamp": "2026-11-18T04:49:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 79.66,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e6ee709865d4454381ae4e2ccd24a700",
+      "timestamp": "2026-11-18T04:49:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 126.33,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-45d4989bb3f84dc7899a02e904adcbaf",
+      "timestamp": "2026-11-18T04:49:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 80.17,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-86a27b7d2a8f4f61a6e27b6f49836189",
+      "timestamp": "2026-11-18T04:49:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 127.07,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-f736c843d3724dbb83ee75f9bf1b639f",
+      "timestamp": "2026-11-18T04:49:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 80.67,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ccd425a44b9745af8f19898d2831bf3d",
+      "timestamp": "2026-11-18T04:49:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 127.81,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-efb27dbff9d14e26abf93da5466856e0",
+      "timestamp": "2026-11-18T04:49:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 81.17,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-3b2f3cb5f78e46a9badb1da83f2e2519",
+      "timestamp": "2026-11-18T04:49:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 128.55,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c7090c774d0b4be0bb7475199787d723",
+      "timestamp": "2026-11-18T04:49:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 81.67,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-d02e2c1aeda042119ec714b993037326",
+      "timestamp": "2026-11-18T04:49:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 129.3,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c5c2942a08ae4575acd7a937b64175d7",
+      "timestamp": "2026-11-18T04:49:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 82.18,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-4116dd457bc8485895f9fb31cb936ea3",
+      "timestamp": "2026-11-18T04:49:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 130.07,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d006ddbfcded469986a69727fd0ccf17",
+      "timestamp": "2026-11-18T04:49:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 82.71,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-922878d9a24d463e8cc429dd2fdcc46b",
+      "timestamp": "2026-11-18T04:50:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 130.87,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-eb6b5b5467f94b40b6dd3c0be4a59347",
+      "timestamp": "2026-11-18T04:50:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 83.27,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-0943fa54cd1640c3a29cbc250571549e",
+      "timestamp": "2026-11-18T04:50:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 131.69,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-9ef05013a5014a79b5f737902193aed4",
+      "timestamp": "2026-11-18T04:50:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 83.85,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-08c8805816d444fe9df7d47db2bed256",
+      "timestamp": "2026-11-18T04:50:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 132.55,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8a861b7a208a4315aeeb7861e9752e37",
+      "timestamp": "2026-11-18T04:50:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 84.47,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-7f2cf7ab71354f55aca78d4ab8cd0989",
+      "timestamp": "2026-11-18T04:50:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 133.44,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-0057fa0418da43b3afc7d1ed23e42b04",
+      "timestamp": "2026-11-18T04:50:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 85.12,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-9b37c9db398949afaa321d7ba679a7c8",
+      "timestamp": "2026-11-18T04:50:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 134.37,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-33161d563d0f4ba997bdf4bece44d9da",
+      "timestamp": "2026-11-18T04:50:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 85.81,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-722519a2c0034d07a403c52c4b285399",
+      "timestamp": "2026-11-18T04:50:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 135.33,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-768992ba094049dca983942524475b7b",
+      "timestamp": "2026-11-18T04:50:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 86.53,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-3daf8b4338f04ebaa97098a3d0c41006",
+      "timestamp": "2026-11-18T04:50:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 136.33,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-dbc76a094b6f4acb80fc632ea3d91304",
+      "timestamp": "2026-11-18T04:50:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 87.29,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-0d98deeac6434902a5e5b2260d7c354c",
+      "timestamp": "2026-11-18T04:50:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 137.36,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-cad0180cb8ef4d5781d445e3f75b10bd",
+      "timestamp": "2026-11-18T04:50:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 88.08,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-932a360b51b94b30b60e9a2f80ccc0fe",
+      "timestamp": "2026-11-18T04:50:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 138.41,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-250f96f5ae30400f888cf7b7f4343314",
+      "timestamp": "2026-11-18T04:50:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 88.89,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-0e291efd58fc4046bac156d168417cbd",
+      "timestamp": "2026-11-18T04:50:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 139.48,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-ad4ca7fb5fe947d097658090ce861a77",
+      "timestamp": "2026-11-18T04:50:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 89.72,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-a26904318f40493f82136db6803a4636",
+      "timestamp": "2026-11-18T04:50:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 140.57,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d383abdcec2b4ad78b76e9b52c736925",
+      "timestamp": "2026-11-18T04:50:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 90.57,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-a525925d37f34862923da7669f8a9577",
+      "timestamp": "2026-11-18T04:50:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 141.67,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-008262e3c5b74e9db0b07dd6bf3467c1",
+      "timestamp": "2026-11-18T04:50:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 91.43,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-0b1b473ddae94822be181d599a6d6b7d",
+      "timestamp": "2026-11-18T04:51:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 142.77,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-4f97201a5a104d7984239005a78a1003",
+      "timestamp": "2026-11-18T04:51:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 92.29,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-8d5930a6dd0d4986898e658116d73877",
+      "timestamp": "2026-11-18T04:51:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 143.86,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c8f4ef545e9a4711adfe76bacfccf4b8",
+      "timestamp": "2026-11-18T04:51:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 93.14,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-c4028cf36bf44db6a762b903019291a3",
+      "timestamp": "2026-11-18T04:51:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 144.94,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-9e6a86cc754c4c818feac12a1cba03c3",
+      "timestamp": "2026-11-18T04:51:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 93.98,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-79bf8958e8ae482cab70835e302083d2",
+      "timestamp": "2026-11-18T04:51:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 146.0,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-f38dcb263bab433aa4b51ccf7c1cfe96",
+      "timestamp": "2026-11-18T04:51:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 94.8,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-15f85e6d440c4e87b7106adf33f61648",
+      "timestamp": "2026-11-18T04:51:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 147.04,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-46d3f4d5c4df4533883c01a765af4995",
+      "timestamp": "2026-11-18T04:51:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 95.6,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-525c272a1c7945b188001d5ff7a8c212",
+      "timestamp": "2026-11-18T04:51:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 148.05,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c0d1ad37f883400e97efe4d7f0a0d76a",
+      "timestamp": "2026-11-18T04:51:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 96.37,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-2a711e74526b48baab15beb9fcca4297",
+      "timestamp": "2026-11-18T04:51:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 149.02,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-e427c8e973fe428486b7135ae138bac6",
+      "timestamp": "2026-11-18T04:51:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 97.1,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-2a805dec4d7b42598878e57be2377151",
+      "timestamp": "2026-11-18T04:51:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 149.96,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c7e6350066d54b60b94714f4d77be498",
+      "timestamp": "2026-11-18T04:51:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 97.8,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-fa4c896e868b43dcb34618fa61f50632",
+      "timestamp": "2026-11-18T04:51:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 150.86,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8dfab72afaa543e8919d1e03819a4d61",
+      "timestamp": "2026-11-18T04:51:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 98.46,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-5cbb135539ac418293dba314439a9e1e",
+      "timestamp": "2026-11-18T04:51:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 151.73,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-01f338bba6a246bca3fb25d48363bac3",
+      "timestamp": "2026-11-18T04:51:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 99.09,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-8e0b1840f86d4b92a846c71805e29720",
+      "timestamp": "2026-11-18T04:51:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 152.56,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-18e2f37f13db454493af58d50c8c0f3d",
+      "timestamp": "2026-11-18T04:51:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 99.68,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-868664972efb42309639095d23382c5a",
+      "timestamp": "2026-11-18T04:51:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 153.37,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-2a0074b36183427cb19cc8e5e8e60fab",
+      "timestamp": "2026-11-18T04:51:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 100.25,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ecf713e85e1c42f4b1d326da30e81162",
+      "timestamp": "2026-11-18T04:52:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 154.15,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-59e6ac04b0904136a7819cc24110e0e8",
+      "timestamp": "2026-11-18T04:52:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 100.79,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-45217b68109e4005a24d97e957a1d7db",
+      "timestamp": "2026-11-18T04:52:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 154.91,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-5a86cc507fd6463b9a92ca4f0f0ad8c6",
+      "timestamp": "2026-11-18T04:52:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 101.31,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-5e5b7ff4d04048fc9085a3cf4d81716c",
+      "timestamp": "2026-11-18T04:52:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 155.66,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-5bed78bf07aa48a2b401549e91335a5a",
+      "timestamp": "2026-11-18T04:52:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 101.82,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-792a013f0c6f4c4c8af7244f6110ed85",
+      "timestamp": "2026-11-18T04:52:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 156.4,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-fac260b8dadf49b28101cbcb8e34058b",
+      "timestamp": "2026-11-18T04:52:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 102.32,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-98e15a40a70e4b09a8580cc73aac8328",
+      "timestamp": "2026-11-18T04:52:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 157.14,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-11c4d206bb5f4a12bd21b5cd050af401",
+      "timestamp": "2026-11-18T04:52:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 102.82,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-a0aaf014239f44bca784c74729da155a",
+      "timestamp": "2026-11-18T04:52:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 157.89,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-37aaa0183cf149aa81a45a68a4f7c67f",
+      "timestamp": "2026-11-18T04:52:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 103.33,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ffc8cb603d6540d690a83d222a130ddb",
+      "timestamp": "2026-11-18T04:52:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 158.65,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8a4f1226af1348d5b05e8f4890b0429b",
+      "timestamp": "2026-11-18T04:52:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 103.85,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-a6bcd782f89543eba00d8a5329d386bc",
+      "timestamp": "2026-11-18T04:52:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 159.43,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-dd76894452074856b52b68973649ef27",
+      "timestamp": "2026-11-18T04:52:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 104.39,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-fd2ed6bfef4e4cb88795fee9bbcb3238",
+      "timestamp": "2026-11-18T04:52:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 160.24,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-b17a4b19ffca4beb83b7d26041700ab2",
+      "timestamp": "2026-11-18T04:52:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 104.96,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e681de249e0a4e0285f95914df956e2b",
+      "timestamp": "2026-11-18T04:52:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 161.08,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-7405f0b0187641fa8394fa3e8b3ee187",
+      "timestamp": "2026-11-18T04:52:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 105.56,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-de308ea7c1244ddf81bd3a05638ffc9e",
+      "timestamp": "2026-11-18T04:52:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 161.96,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-12643068088d4e1aaee9f792bafe56ae",
+      "timestamp": "2026-11-18T04:52:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 106.2,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-4e220d5e51284b1788be00331dfb7389",
+      "timestamp": "2026-11-18T04:52:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 162.87,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-5dc516feac7b45b491bc83a040de2d85",
+      "timestamp": "2026-11-18T04:52:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 106.87,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-469952305faa418282fa34c4ae96f42b",
+      "timestamp": "2026-11-18T04:53:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 163.82,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-e253c8334d3d48a18a315069688d9ffa",
+      "timestamp": "2026-11-18T04:53:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 107.58,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ba99dd2fcf174907a1b4c408d4c7a447",
+      "timestamp": "2026-11-18T04:53:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 164.8,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-786f9e14c506425b86ab8e3e3eb4eba4",
+      "timestamp": "2026-11-18T04:53:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 108.32,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-6c62018bc3d44cd18bcb8130c90b3a4e",
+      "timestamp": "2026-11-18T04:53:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 165.81,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-91c70482e8454b7382f981242c167e3f",
+      "timestamp": "2026-11-18T04:53:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 109.09,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-63907094f6344595b5800aea5a1f0b41",
+      "timestamp": "2026-11-18T04:53:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 166.85,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-33577f5759cb453b8905b01815f2da07",
+      "timestamp": "2026-11-18T04:53:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 109.89,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-52a351e302c34e8ab6884eb8627579ec",
+      "timestamp": "2026-11-18T04:53:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 167.92,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-ed317cebde824ba09679ded1cb9e47d0",
+      "timestamp": "2026-11-18T04:53:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 110.72,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-d64fe98609624a16b942ef413f90ae79",
+      "timestamp": "2026-11-18T04:53:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 169.0,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-436ab3b5bf06455fa9b976ab8a299ee2",
+      "timestamp": "2026-11-18T04:53:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 111.56,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-7357a0fd7354419b907b7719473d053b",
+      "timestamp": "2026-11-18T04:53:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 170.1,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-03ab6b3130334318828797e521a4ce65",
+      "timestamp": "2026-11-18T04:53:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 112.42,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ab058b9a04f04bf7a7593e52848336e1",
+      "timestamp": "2026-11-18T04:53:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 171.2,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-f5d1c712c11e41e2893a7f2a281b8d42",
+      "timestamp": "2026-11-18T04:53:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 113.28,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-59f25fe1207349a0adbbc58161482e71",
+      "timestamp": "2026-11-18T04:53:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 172.3,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-045ff6bf950d4764adfc5ea358b216b9",
+      "timestamp": "2026-11-18T04:53:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 114.14,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-fa6d2d9ffa74463080aeba2d879e310f",
+      "timestamp": "2026-11-18T04:53:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 173.39,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-2de24d53edc84fa7b9b8779aeb1e3c30",
+      "timestamp": "2026-11-18T04:53:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 114.99,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-c0c6e9831c5b4f22a7f7b9931a742628",
+      "timestamp": "2026-11-18T04:53:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 174.46,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-00fb34e59c6344c1aa8b00ca0d27fa4e",
+      "timestamp": "2026-11-18T04:53:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 115.82,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-5fa2fc22af3f4b58951df300626b89a7",
+      "timestamp": "2026-11-18T04:53:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 175.51,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-29f6b5f42d5b425d8a3ae9f2702fdbfc",
+      "timestamp": "2026-11-18T04:53:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 116.63,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-df0506ef4f29489baebc536de26c0ecd",
+      "timestamp": "2026-11-18T04:54:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 176.53,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-7f8e4d9b57264df7ab799e1ebf1dc777",
+      "timestamp": "2026-11-18T04:54:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 117.41,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-3ca47eae6c8e45069189d47d484b4c33",
+      "timestamp": "2026-11-18T04:54:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 177.52,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-6a03e730cfd646e19001b599b147df7e",
+      "timestamp": "2026-11-18T04:54:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 118.16,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-b79bb3bbd35a414cbc60590d5a888265",
+      "timestamp": "2026-11-18T04:54:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 178.47,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-0729158e58ed4e9698dd29b804bea131",
+      "timestamp": "2026-11-18T04:54:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 118.87,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-4a0e766f06f34e2ebcc658af8bd156f0",
+      "timestamp": "2026-11-18T04:54:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 179.39,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-dabc5fdf298040188a46714e5dcd43b9",
+      "timestamp": "2026-11-18T04:54:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 119.55,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e0c94d048f6a4496b7c13aeddbc136fd",
+      "timestamp": "2026-11-18T04:54:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 180.27,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-e9feac130fc04c30b31c1b56684545a3",
+      "timestamp": "2026-11-18T04:54:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 120.19,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-c20a124cf1014ee78db326069562fda3",
+      "timestamp": "2026-11-18T04:54:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 181.12,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8d248cd10ec44058aa9f3d7ff3c5d469",
+      "timestamp": "2026-11-18T04:54:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 120.8,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-7535dbf3329e433db7e801bb000f219d",
+      "timestamp": "2026-11-18T04:54:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 181.94,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-5373634f8187455eb21272bf6c6699e6",
+      "timestamp": "2026-11-18T04:54:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 121.38,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-c2396a411bf948b08de1771f1dc250ff",
+      "timestamp": "2026-11-18T04:54:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 182.73,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-343df10f507c4496b190d193fda69419",
+      "timestamp": "2026-11-18T04:54:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 121.93,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-7b29b11cd93a4f9fb4f5f437f6b71703",
+      "timestamp": "2026-11-18T04:54:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 183.5,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-4b23c61f5e7841f399c31fa0dc0b0c89",
+      "timestamp": "2026-11-18T04:54:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 122.46,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-a37e584f867247e9ba856e9ba7ea7a7e",
+      "timestamp": "2026-11-18T04:54:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 184.25,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-6b4e3fc4a2a448e99bdfdb5ec902b6fb",
+      "timestamp": "2026-11-18T04:54:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 122.97,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-3a28de68f27d49ef900a2d5555029273",
+      "timestamp": "2026-11-18T04:54:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 184.99,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-a2914908e37c43129237eada2870111b",
+      "timestamp": "2026-11-18T04:54:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 123.47,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-eaf8586610f94e13ad27f6db87c96726",
+      "timestamp": "2026-11-18T04:54:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 9.0,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8f897d59fd5044f1adaa53b19b24ae25",
+      "timestamp": "2026-11-18T04:54:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 123.97,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e193f53651804d11919e72f38651bfd5",
+      "timestamp": "2026-11-18T04:55:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 9.75,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-45f26f6847e144d7b562760b477b5ac8",
+      "timestamp": "2026-11-18T04:55:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 124.48,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-8a9a385308834d0ca40c92d8cb345542",
+      "timestamp": "2026-11-18T04:55:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 10.51,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d4bbb4bf3e7544d5b7071c01db4aea69",
+      "timestamp": "2026-11-18T04:55:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 125.0,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ec1e4fd915b040e9b95ae22aa0ff8e4d",
+      "timestamp": "2026-11-18T04:55:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 11.29,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-9d5e6a7527ab49a4922aba47ba17f103",
+      "timestamp": "2026-11-18T04:55:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 125.54,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-6c353a37f6dd4ab48ac88b55e033c6a7",
+      "timestamp": "2026-11-18T04:55:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 12.09,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-7c1295b32ff5481dbdd8c6f2d9803626",
+      "timestamp": "2026-11-18T04:55:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 126.1,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-3685c2f4a641457d9a213f902cb2c8b6",
+      "timestamp": "2026-11-18T04:55:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 12.92,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-a7eb92c448bc42db9bc05ad6d072b720",
+      "timestamp": "2026-11-18T04:55:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 126.69,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-99a10bb2d8dc4638a62c188a59dcf81c",
+      "timestamp": "2026-11-18T04:55:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 13.78,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-f1f7e4fada4a4882a4f4e3bdd0209d03",
+      "timestamp": "2026-11-18T04:55:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 127.31,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-1947d6e8b18043cc87cbecfc16072aae",
+      "timestamp": "2026-11-18T04:55:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 14.68,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-e79d74d236dc4d1ca135c09fdcdb1a09",
+      "timestamp": "2026-11-18T04:55:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 127.97,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-591812616a8f4ad1a49216a8c6d45971",
+      "timestamp": "2026-11-18T04:55:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 15.61,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-3b68fa316b4848b39d4dca890595eb83",
+      "timestamp": "2026-11-18T04:55:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 128.66,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-df428c03bf6946519dfa3fcff5f0b688",
+      "timestamp": "2026-11-18T04:55:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 16.58,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-ffd064880730404e88d37658e7659dee",
+      "timestamp": "2026-11-18T04:55:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 129.39,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-65fe171c511c4f119d8176b8fdda507a",
+      "timestamp": "2026-11-18T04:55:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 17.58,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-3fc6dff7c3b1473c93fe54e2e41839ad",
+      "timestamp": "2026-11-18T04:55:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 130.15,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-75d7ad228235406f8ce896f7127fe669",
+      "timestamp": "2026-11-18T04:55:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 18.61,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-4c2c7303c3db447fae3c64572e536312",
+      "timestamp": "2026-11-18T04:55:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 130.94,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-31a7841a060a40d1b4239cbb22643f93",
+      "timestamp": "2026-11-18T04:55:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 19.67,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-531f1938fe984d01b11049f7644d01e0",
+      "timestamp": "2026-11-18T04:55:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 131.76,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e89f965e7a3e499988e04b91ee87883c",
+      "timestamp": "2026-11-18T04:56:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 20.75,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-ec03eb453abd495bb9179a8feb6e5492",
+      "timestamp": "2026-11-18T04:56:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 132.6,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-c6dd44965cee46be8e71fccc4862ab33",
+      "timestamp": "2026-11-18T04:56:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 21.84,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-4db4b48328354f22852e503588945c12",
+      "timestamp": "2026-11-18T04:56:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 133.45,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-dd2cd868f1aa4a9399877fa184fd8db9",
+      "timestamp": "2026-11-18T04:56:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 22.94,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-5a197029e4da4daca6c78beeea83c6d4",
+      "timestamp": "2026-11-18T04:56:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 134.31,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-2e81d1fdbaeb4b83aa02bf9ed66df1fe",
+      "timestamp": "2026-11-18T04:56:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 24.04,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-f81ee219165b431e95ed04dd31749df4",
+      "timestamp": "2026-11-18T04:56:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 135.17,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-6369fc2d669a473c8d7b33eedb77f149",
+      "timestamp": "2026-11-18T04:56:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 25.13,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-b40e3522480b47bfae8776fe4c19d916",
+      "timestamp": "2026-11-18T04:56:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 136.02,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-33e2d9f839e142c087d850e120633310",
+      "timestamp": "2026-11-18T04:56:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 26.21,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-023fc2deae274c658782b8cab16df7db",
+      "timestamp": "2026-11-18T04:56:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 136.86,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-407a7f28ae0a42c793a2ee0589d3d983",
+      "timestamp": "2026-11-18T04:56:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 27.27,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-4fd6c86da77a4dd48d431a93423f40ba",
+      "timestamp": "2026-11-18T04:56:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 137.68,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-9a457f2b496e4d5f8318c4276a2c9218",
+      "timestamp": "2026-11-18T04:56:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 28.3,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d87879244ca848aabe63d0931e095d7b",
+      "timestamp": "2026-11-18T04:56:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 138.47,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-fa9d7ef57231416ab72f5c97d5d2a530",
+      "timestamp": "2026-11-18T04:56:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 29.3,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d46c2ac17654469cb31a0ae5de58cf26",
+      "timestamp": "2026-11-18T04:56:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 139.23,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-383d44f7a17d471b9d1614de82b92d3d",
+      "timestamp": "2026-11-18T04:56:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 30.27,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d7c30b8600174af2b37aec2187db0663",
+      "timestamp": "2026-11-18T04:56:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 139.96,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-cbe5ed61102042bb822bc95d2c78be8a",
+      "timestamp": "2026-11-18T04:56:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 31.2,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-a81fb58d83754b58ae3157b74540cbd0",
+      "timestamp": "2026-11-18T04:56:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 140.65,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-24b707d90e01489c9477af49db71846d",
+      "timestamp": "2026-11-18T04:56:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 32.1,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-bcbb23c17b6a4830aefc46d3a9239457",
+      "timestamp": "2026-11-18T04:56:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 141.31,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-45aa87b1d42f4a77aa2f2e5d2712a181",
+      "timestamp": "2026-11-18T04:57:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 32.96,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c5c55b2efeff4a46a2a54d26d360ddb0",
+      "timestamp": "2026-11-18T04:57:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 141.93,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-d03f599c3ae94fd4a40559c1c426836a",
+      "timestamp": "2026-11-18T04:57:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 33.79,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-25f6140e99b14955a37ad91b8740839f",
+      "timestamp": "2026-11-18T04:57:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 142.52,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-1e518591910f477a958170e39d6b2c0e",
+      "timestamp": "2026-11-18T04:57:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 34.59,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-296618e9cdd249418f676e2c8b163c13",
+      "timestamp": "2026-11-18T04:57:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 143.08,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-12c5480b24fa4fb688942be16a653665",
+      "timestamp": "2026-11-18T04:57:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 35.37,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-0b504d5f131c4b7fa61d4f9b38036b26",
+      "timestamp": "2026-11-18T04:57:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 143.62,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-89789037bc5346c9b6898217076aa570",
+      "timestamp": "2026-11-18T04:57:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 36.13,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-1042fd781036416ca89dd3bec769434d",
+      "timestamp": "2026-11-18T04:57:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 144.14,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-f0b6cb4fa80047c9aef0de1b04d96e4c",
+      "timestamp": "2026-11-18T04:57:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 36.88,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-0f6b8eff322947beae50658053e607ea",
+      "timestamp": "2026-11-18T04:57:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 144.65,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-ebe48960e156478aa82be46bdf2c132e",
+      "timestamp": "2026-11-18T04:57:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 37.62,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-a9b73969c76d42cf928a19a4f5222e99",
+      "timestamp": "2026-11-18T04:57:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 145.15,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-3b406c7c572341b2888db76a30a8d96f",
+      "timestamp": "2026-11-18T04:57:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 38.36,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-dc505f7a56604711adeefe8afbc5fdab",
+      "timestamp": "2026-11-18T04:57:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 145.65,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-a402e5559fd44c948dc71df44be8c454",
+      "timestamp": "2026-11-18T04:57:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 39.11,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-d36edfc6bd8d4ea3ac45b038c06b3fbf",
+      "timestamp": "2026-11-18T04:57:40Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 146.16,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-5f51c66fecf3468180077de2cf5a9216",
+      "timestamp": "2026-11-18T04:57:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 39.88,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-44b7569f911846c7b9c14c4062575f8f",
+      "timestamp": "2026-11-18T04:57:45Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 146.69,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-e060a44931a24b81981eefe2f48df830",
+      "timestamp": "2026-11-18T04:57:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 40.67,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-8ec2f07e1759413db14ca35b96bbe3cb",
+      "timestamp": "2026-11-18T04:57:50Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 147.24,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-4bb3987454844f9da7c4e8b61bd6bb6e",
+      "timestamp": "2026-11-18T04:57:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 41.49,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-fab0f4226a884a6a84184e1404a579d1",
+      "timestamp": "2026-11-18T04:57:55Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 147.82,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-f8642486f8224ba58831bc9fd4909d99",
+      "timestamp": "2026-11-18T04:58:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 42.34,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-18a6e8facea74297a1edd1d7fadc234a",
+      "timestamp": "2026-11-18T04:58:00Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 148.43,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-55ff4f6c1193403db564b1d9ebcde7bf",
+      "timestamp": "2026-11-18T04:58:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 43.22,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-3394f3c411d748dbb767b27e1fcb4c5f",
+      "timestamp": "2026-11-18T04:58:05Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 149.07,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-4869397a83ed47debcc75e75932a7745",
+      "timestamp": "2026-11-18T04:58:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 44.14,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-47699f6761f04687b8a4eee7284aafa8",
+      "timestamp": "2026-11-18T04:58:10Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 149.75,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-67549923c71448b099f1d7d062a26ae0",
+      "timestamp": "2026-11-18T04:58:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 45.09,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-3b5a4d5f8d2246d4961c504ec5eb8f2b",
+      "timestamp": "2026-11-18T04:58:15Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 150.46,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-9e4d31c28bf44fca8317c37b611181e9",
+      "timestamp": "2026-11-18T04:58:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 46.08,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-c847c8645e2145ed92c612039a6f847a",
+      "timestamp": "2026-11-18T04:58:20Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 151.21,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-2084104f11fe42699566b76937167402",
+      "timestamp": "2026-11-18T04:58:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 47.1,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-b9499cbf6184482d83c2a40e4dd4023f",
+      "timestamp": "2026-11-18T04:58:25Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 151.99,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-38f308c82c3b45c7a70a7bfed02a9593",
+      "timestamp": "2026-11-18T04:58:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 48.15,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-7a7c477af08340ecb2439fa94eba68e8",
+      "timestamp": "2026-11-18T04:58:30Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 152.8,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-METALICA-620a5c066e9e4e3b9ff4abb1a5296a06",
+      "timestamp": "2026-11-18T04:58:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "METALICA",
+      "nivel": 49.22,
+      "origemDado": "SIMULADO"
+    },
+    {
+      "id": "SIM-NAO_METALICA-de83466ad4e1429da2ca3cc5bac33ee3",
+      "timestamp": "2026-11-18T04:58:35Z",
+      "tipoEvento": "NIVEL_RESERVATORIO",
+      "reservatorioId": "NAO_METALICA",
+      "nivel": 153.63,
+      "origemDado": "SIMULADO"
+    }
+  ]
+}
