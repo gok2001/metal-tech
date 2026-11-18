@@ -1,0 +1,25 @@
+METALTECH — GERADOR DE LEITURAS SIMULADAS DOS RESERVATORIOS
+
+1. Copie a pasta scripts para dentro de:
+   metal-tech/tratamento-dados/
+
+   O arquivo deve ficar em:
+   tratamento-dados/scripts/gerar_leituras_reservatorios.py
+
+2. Mantenha a API Python em execução (Uvicorn na porta 8000).
+
+3. No CMD, entre em tratamento-dados e ative o ambiente virtual:
+   cd %USERPROFILE%\Desktop\metal-tech\tratamento-dados
+   .venv\Scripts\activate
+
+4. Primeiro faça uma simulação sem enviar dados:
+   python scripts/gerar_leituras_reservatorios.py --dry-run
+
+5. Se o período e a quantidade estiverem corretos, execute sem --dry-run:
+   python scripts/gerar_leituras_reservatorios.py
+
+O script usa as últimas leituras dos reservatórios como ponto de partida (as duas leituras de teste já enviadas) e gera novos níveis a cada 5 segundos até o horário atual. Se ainda não houver leitura de reservatório, usa o último evento de produção como referência temporal.
+
+Os valores são fictícios, numéricos e sem unidade física definida. Cada evento inclui origemDado=SIMULADO. O script não apaga nem altera CSVs existentes; salva também uma cópia do lote JSON em data/simulated/ antes do envio.
+
+O script envia um único lote ao endpoint POST /api/v1/automacao/leituras. Execute apenas uma vez para evitar acrescentar outra série simulada.
