@@ -1,0 +1,5 @@
+# Dependências da automação (esteira e gateway)
+
+requests>=2.31.0
+
+flask>=3.0.0

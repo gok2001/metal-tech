@@ -22,7 +22,7 @@ def relatar_erros(estado):
 
         if quantidade > 0:
             print(
-                f"\\n[{agora()}] ERRO - Sensor {sensor}: "
+                f"\n[{agora()}] ERRO - Sensor {sensor}: "
                 f"{quantidade} falhas nos últimos "
                 f"{INTERVALO_RELATORIO_ERROS} segundos."
             )

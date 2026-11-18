@@ -1,3 +1,4 @@
+import threading
 import time
 
 from config import INTERVALO_ENVIO, INTERVALO_LOOP
@@ -15,28 +16,25 @@ def criar_estado():
         # Filas dos dois POSTs
         "pendentes_esteira": [],
         "pendentes_reservatorio": [],
-        "trava": __import__("threading").Lock(),
+        "trava": threading.Lock(),
         "lote_seq": 0,
 
-        # Peças que aguardam chegar ao reservatório
-        "pecas_aguardando_reservatorio": [],
-
-        # Contadores dos reservatórios
+        # Contadores dos reservatórios (1 a 5)
         "contadores_reservatorio": {
             "METALICA": 0,
-            "NAO_METALICA": 0
+            "NAO_METALICA": 0,
         },
 
         # Controle de erros
         "erros_sensores": {
             "capacitivo/indutivo": {
                 "quantidade": 0,
-                "ultimo_erro": None
+                "ultimo_erro": None,
             },
             "distancia": {
                 "quantidade": 0,
-                "ultimo_erro": None
-            }
+                "ultimo_erro": None,
+            },
         },
         "ultimo_relatorio_erros": time.monotonic(),
 
@@ -54,7 +52,7 @@ def criar_estado():
         "inicio_rearme": None,
 
         # Temporizador dos lotes
-        "ultimo_envio": time.monotonic()
+        "ultimo_envio": time.monotonic(),
     }
 
 
@@ -79,7 +77,6 @@ def main():
         try:
             cap = ler("capacitivo")
             ind = ler("indutivo")
-
         except Exception as e:
             registrar_erro(estado, "capacitivo/indutivo", e)
             time.sleep(0.02)
@@ -90,11 +87,9 @@ def main():
 
         # F. Leitura independente da distância
         dist_cm = None
-
         try:
             dist_raw = ler("distancia")
             dist_cm = dist_raw // 16
-
         except Exception as e:
             registrar_erro(estado, "distancia", e)
 
@@ -109,4 +104,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\\nAutomação encerrada pelo usuário.")
+        print("\nAutomação encerrada pelo usuário.")
