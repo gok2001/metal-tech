@@ -12,7 +12,7 @@ INTERVALO_ENVIO = 5   # segundos entre envios
 FIM_EVENTO = 0.3      # segundos sem detecção para encerrar uma peça
 JANELA_IND = 0.6      # segundos que espera o indutivo depois que o evento começa
 IND_LIVRE = 0x7FE0
-API = "http://10.110.12.76:5000"  # endereço da API; troque pelo IP do PC dela se rodar em outro PC
+API = "http://10.110.12.37:5000"  # endereço da API; troque pelo IP do PC dela se rodar em outro PC
 
 
 session = requests.Session()
