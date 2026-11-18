@@ -1,0 +1,24 @@
+.mt-grafico-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.mt-grafico-topo .mt-grafico-titulo {
+  margin: 0;
+}
+
+.mt-legenda-linha {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.mt-barras-area {
+  width: 100%;
+  height: 210px;
+}

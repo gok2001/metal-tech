@@ -1,0 +1,34 @@
+.mt-card.mt-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 0;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.mt-rodape-hora {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cbd5e1;
+}
+
+.mt-rodape-hora svg {
+  color: #7aa2ff;
+}
+
+.mt-rodape-api {
+  color: #22e08a;
+  white-space: nowrap;
+}
+
+.mt-rodape-api.offline {
+  color: #ef4444;
+}
+
+.mt-rodape-api.offline .mt-bolinha {
+  background: #ef4444;
+}

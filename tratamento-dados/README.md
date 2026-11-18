@@ -38,3 +38,29 @@ Execute a suíte a partir desta pasta:
 ```bash
 python -m pytest -q
 ```
+
+## Integração manual com Spring Boot
+
+Nesta etapa, a sincronização é executada manualmente para validar os contratos
+com dados já armazenados nos CSVs. Ela não é disparada automaticamente a cada
+lote recebido pela API de automação.
+
+1. Inicie o MySQL e o backend Spring Boot.
+2. Copie `.env.example` para `.env` nesta pasta e ajuste `SPRING_BOOT_BASE_URL`
+   se necessário (padrão: `http://localhost:8080`).
+3. Com o ambiente virtual ativo e estando na pasta `tratamento-dados`, execute:
+
+   ```bash
+   python scripts/sincronizar_com_springboot.py
+   ```
+
+O script recalcula o histórico CSV, consulta o histórico de produção do Spring
+Boot para não reenviar intervalos já cadastrados e envia as anomalias uma a uma.
+O backend responde HTTP 409 para anomalias já existentes, que são contabilizadas
+como duplicadas. As contagens de produção são enviadas no contrato snake_case
+esperado pelo DTO Java; o identificador de anomalia `id_origem` é convertido para
+`id`, conforme o DTO atual do Spring Boot.
+
+Esta sincronização manual é apropriada para os testes iniciais. Para operação
+contínua, será necessário evoluir para uma fila/outbox persistente e uma regra
+que só envie minutos encerrados, evitando publicar um minuto ainda em andamento.

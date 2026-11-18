@@ -45,3 +45,77 @@ def test_rejeitar_cabecalho_invalido():
     client = TestClient(app)
     response = client.post("/api/v1/automacao/leituras", json={"leituras": []})
     assert response.status_code == 422
+
+
+def test_filtrar_periodos_encerrados_nao_envia_minuto_atual():
+    from datetime import datetime, timezone
+    from src.api.main import _filtrar_periodos_encerrados
+
+    processamento = {
+        "producaoPorMinuto": [
+            {"periodo": "2026-11-17T20:00:00+00:00", "total": 2},
+            {"periodo": "2026-11-17T20:01:00+00:00", "total": 1},
+        ],
+        "anomalias": [
+            {"data_ocorrencia": "2026-11-17T20:00:30+00:00", "id_origem": "a"},
+            {"data_ocorrencia": "2026-11-17T20:01:10+00:00", "id_origem": "b"},
+        ],
+    }
+
+    resultado = _filtrar_periodos_encerrados(
+        processamento,
+        agora=datetime(2026, 11, 17, 20, 1, 20, tzinfo=timezone.utc),
+    )
+
+    assert [item["periodo"] for item in resultado["producaoPorMinuto"]] == [
+        "2026-11-17T20:00:00+00:00"
+    ]
+    assert [item["id_origem"] for item in resultado["anomalias"]] == ["a"]
+
+
+def test_receber_lote_dispara_sincronizacao_apenas_dados_processados(
+    tmp_path, monkeypatch
+):
+    from src import api
+    from src.storage.csv_manager import CSVManager
+
+    chamadas = []
+
+    class ClienteFake:
+        def sincronizar(self, dados):
+            chamadas.append(dados)
+            return {
+                "producoes_enviadas": 1,
+                "producoes_ja_existentes": 0,
+                "anomalias_enviadas": 0,
+                "anomalias_ja_existentes": 0,
+            }
+
+    monkeypatch.setattr(api.main, "csv_manager", CSVManager(tmp_path))
+    monkeypatch.setattr(api.main, "SpringBootClient", ClienteFake)
+
+    lote = {
+        "loteId": "LOTE-AUTO-001",
+        "equipamento": "ESTEIRA-01",
+        "enviadoEm": "2026-11-14T10:02:05Z",
+        "intervaloSegundos": 5,
+        "leituras": [
+            {
+                "id": "AUTO-001",
+                "timestamp": "2026-11-14T10:00:01Z",
+                "tipoEvento": "PECA_DETECTADA",
+                "sensores": {"indutivo": True, "capacitivo": True},
+            }
+        ],
+    }
+
+    response = TestClient(api.main.app).post(
+        "/api/v1/automacao/leituras", json=lote
+    )
+
+    assert response.status_code == 202
+    assert response.json()["sincronizacao"]["status"] == "CONCLUIDA"
+    assert len(chamadas) == 1
+    assert "producaoPorMinuto" in chamadas[0]
+    assert "anomalias" in chamadas[0]
+    assert "leituras" not in chamadas[0]
