@@ -1,8 +1,156 @@
 [
     {
-        "id": "20967fee-d7e2-44d5-a498-de408620ecf8",
+        "id": "0c8f627e-3d68-442e-8e04-a313dbbfcfa4",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:49:49.572005Z",
+        "timestamp": "2026-11-18T18:36:15.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "e5d3149c-e93a-4b76-b67b-6644bd522ab9",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:15.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 20.34
+    },
+    {
+        "id": "63dba30b-5e3f-4436-a3e9-076bac62ced4",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:18.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "e24fd16d-a6db-4d87-8717-38c23fb9c921",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:21.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "c10726ff-acde-473b-bc19-de7aa22db02e",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:24.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "669e9890-bc24-4f7c-964f-e62b6aa3db8e",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:24.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 21.74
+    },
+    {
+        "id": "d106040b-2ba6-4eff-a205-ab1230f0f0db",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:27.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "3b416429-c0b5-4a5b-be85-aa39fb99427f",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:30.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "97bee2ff-ebdb-4ece-a371-64a0edd381db",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:33.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "2068c763-611a-4ad9-b4b9-fadb7d191132",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:33.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 23.51
+    },
+    {
+        "id": "d0efbf85-70ed-4316-aa5d-eb2274778ede",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:36.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "6116ea42-4498-43c7-9527-a9af8dd6c520",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:39.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "1bc99026-f8d1-4873-a2a3-6ad29062717b",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:42.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "fc1734e1-9fef-4605-bf61-dba605ec432a",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:42.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 30.25
+    },
+    {
+        "id": "6c61aaaa-d5c1-48d5-8726-9fbd2d39867b",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:45.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "bd48ece2-fdc0-4475-81cd-345fe968dd4d",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:48.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "87281620-070a-47f3-9a71-454befd857c5",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:51.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -10,16 +158,53 @@
         }
     },
     {
-        "id": "3b388ce5-b6c9-42b0-a30e-e7ef8688dd88",
+        "id": "adc68f08-50e1-421e-9956-8c9b47fcc9dc",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:49:49.572005Z",
+        "timestamp": "2026-11-18T18:36:51.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 20.73
+        "nivelReservatorio": 31.62
     },
     {
-        "id": "b615428e-745e-48b4-8135-b34ccc8523d7",
+        "id": "14eae9af-28a6-4886-9aef-a479b496700a",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:49:52.572005Z",
+        "timestamp": "2026-11-18T18:36:54.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "ad6f4db6-4298-47f3-bd12-ce8a68aaba93",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:36:57.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "3aadf355-78e0-4d0f-885f-41c3a01d8a12",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:00.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "2e1a2196-9160-45a7-9918-d9903ef6c22d",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:00.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 33.26
+    },
+    {
+        "id": "814d2662-c37e-4e8f-b5b7-11e71eacf97c",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:03.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -27,36 +212,9 @@
         }
     },
     {
-        "id": "29de9e87-58f9-45ac-8a6d-9379ff2441fe",
+        "id": "049d78a3-6b6d-4c82-8ffc-fc743befdcf1",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:49:55.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "ed745515-8f56-40c8-ba9c-e0d8feb6383e",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:49:58.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "75fa23ec-59e8-4444-8a7e-7f4f039a668a",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:49:58.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 22.04
-    },
-    {
-        "id": "9aa910a9-f5d5-439a-89e4-210c6cfa54e1",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:01.572005Z",
+        "timestamp": "2026-11-18T18:37:06.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -64,9 +222,9 @@
         }
     },
     {
-        "id": "bd0a1a60-d1d9-411f-a668-918c7bc9ab0f",
+        "id": "0f267c61-280a-4a97-b4f6-37dc1ddf6c5e",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:04.572005Z",
+        "timestamp": "2026-11-18T18:37:09.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -74,26 +232,16 @@
         }
     },
     {
-        "id": "9d5b96b3-7dd9-43b7-8c76-c1feed430ac6",
+        "id": "25576b61-3ebd-46d3-bf49-a99d460c1540",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:07.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "1946eb77-0a9a-4a21-9b22-740b70ddcb58",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:07.572005Z",
+        "timestamp": "2026-11-18T18:37:09.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 23.97
+        "nivelReservatorio": 34.9
     },
     {
-        "id": "af76081c-0fe3-48d0-a59c-10f128ce4d6c",
+        "id": "810e38b8-823b-4eaf-b278-9b6528339843",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:10.572005Z",
+        "timestamp": "2026-11-18T18:37:12.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -101,19 +249,9 @@
         }
     },
     {
-        "id": "5efdbdac-239a-46a1-a61f-7b18f34ee5db",
+        "id": "be6957f7-3e5e-497f-8bb1-d7c2d214b4e8",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:13.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "44689c10-6ec1-4c92-b31f-b5d474062959",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:16.572005Z",
+        "timestamp": "2026-11-18T18:37:15.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -121,460 +259,26 @@
         }
     },
     {
-        "id": "77fa8b70-31c3-453c-a7eb-43a537fe16e1",
+        "id": "e3b38c2a-26ed-45ff-bcd6-56104c5f98bb",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:16.572005Z",
+        "timestamp": "2026-11-18T18:37:18.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "6baff0d1-13c0-4a85-b1a2-ec26edd217ab",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:18.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 33.42
+        "nivelReservatorio": 36.55
     },
     {
-        "id": "db40e98b-82d4-48b8-a250-1d39d8d848c9",
+        "id": "5106126c-9cb0-4eb9-8e3f-bd57287d75a5",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:19.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "1a40ee4b-97d3-4e59-86a3-53cc061f12c2",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:22.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "105a69f2-a962-45a4-9aaa-998e3b8e1cf2",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:25.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "dd60d150-6bde-405b-833b-228f3eed43f4",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:25.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 35.27
-    },
-    {
-        "id": "655e9f44-1a2a-4185-9196-a79e589c0c04",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:28.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "7d315f84-5043-4f43-9eca-0a0c06b5c301",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:31.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "07c40f3e-9773-4de2-9cc4-b12386a4c41e",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:34.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "f8cfb3ed-fe1e-4ec2-b796-d11776ced75a",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:34.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 36.83
-    },
-    {
-        "id": "d9878663-4a27-4452-8497-bc198eaf0ac0",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:37.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e1f91018-f996-4a08-98a8-8c0ae85ab222",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:40.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "3bc0bad3-bf1b-42f7-94bc-93203d74d49c",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:43.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "b7e9fd42-1ce2-4f64-b606-9585c925decb",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:43.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 38.82
-    },
-    {
-        "id": "1206d447-1316-4747-8532-4df64426220e",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:46.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "64c88197-c809-4bfe-9aef-f5bbe83b96ca",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:49.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "0e7a9da4-3b10-450c-855b-a23b23173ca6",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:52.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "48b404b6-81c4-4300-9ff0-02df07a50bca",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:52.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 40.17
-    },
-    {
-        "id": "859ff442-08fb-4153-9f8e-a84d05b4485c",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:55.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "97943231-4f6c-497b-99e9-3cbba2e1c513",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:50:58.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "37f30086-d7ff-4918-b636-d0772d1881b0",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:01.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "1b88f633-6d76-499d-b988-123651138536",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:01.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 41.47
-    },
-    {
-        "id": "88a9e11b-406f-457b-80b0-c4fa2877a781",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:04.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "f7ccf09f-5fd5-4552-a3ca-d2d320cffd52",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:07.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "6bc65bcf-e3f4-420a-9650-633ab1e0f319",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:10.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "0fab7d7c-37ce-4eb0-aa24-d895a00ab77e",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:10.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 50.87
-    },
-    {
-        "id": "865f5c08-6f4f-40f8-9d33-286a222ae526",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:13.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e78187a6-5b0c-462d-a115-25dd66f1a249",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:16.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "6a86a4c3-2cb2-4383-9eb1-9ba848277349",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:19.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "78a15128-b1af-462b-ab48-93146570746b",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:19.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 52.54
-    },
-    {
-        "id": "c62332fd-06b1-40c3-9313-cfd1b5c19d18",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:22.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "569fa8f1-6635-4d64-b365-6274d1e0c0fc",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:25.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "aa41817f-5f0b-4dc7-80ad-1d7ead48fa61",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:28.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "76efe219-2e1f-4902-be16-be8e79309312",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:28.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 54.17
-    },
-    {
-        "id": "f620e140-f23e-4624-a00c-e7402b64a260",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:31.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "b21b144a-ab37-41a4-a2e6-160b276f3863",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:34.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "40781ebb-b7df-4c0f-992f-570b951c99fd",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:37.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "419b0f20-6f0e-497a-8014-19aee86a7232",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:37.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 56.28
-    },
-    {
-        "id": "0cb725b5-8f2c-4821-8875-90718989215d",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:40.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "3d4d6da3-b1d7-447c-aa9f-806001d56cb2",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:43.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "f9f64f4f-aabf-44d4-9fcf-88d0f24d54fa",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:46.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "3ccf67f1-7e17-456d-a4d3-2c2ecee5aa32",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:46.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 58.29
-    },
-    {
-        "id": "aa217f94-93e0-4248-984c-c006d059dff3",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:49.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e79cb3b7-18c8-46d5-9b5d-2b065bca9c25",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:52.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "a16e9dce-013e-46e2-ae32-2bf4d4f7e67c",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:55.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "497bc6ca-ff3d-4524-b2b4-6c8a421d81a4",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:55.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 69.26
-    },
-    {
-        "id": "199d9dda-7735-4d96-8cf8-cf669cf3ff8c",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:51:58.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "73e41607-f808-4921-b254-57c3951945e2",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:01.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "c159bc8a-c7cd-4b29-b45f-5e8a9607cc0c",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:04.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "a37f7377-f86a-473c-9016-952844a81633",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:04.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 79.98
-    },
-    {
-        "id": "03adff41-4632-471b-bea5-e15ed49424b5",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:07.572005Z",
+        "timestamp": "2026-11-18T18:37:21.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -582,9 +286,9 @@
         }
     },
     {
-        "id": "8cac772a-eec4-44b0-ba04-60a37e198cd6",
+        "id": "7c0d1779-2a37-4abb-ab12-46a45d90e22a",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:10.572005Z",
+        "timestamp": "2026-11-18T18:37:24.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -592,9 +296,9 @@
         }
     },
     {
-        "id": "0cb1190a-5a3b-452b-8df5-815c88719f91",
+        "id": "19b965c8-9a4f-489a-a652-3a5debcccb9e",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:13.572005Z",
+        "timestamp": "2026-11-18T18:37:27.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -602,16 +306,63 @@
         }
     },
     {
-        "id": "41f20676-8a4f-4332-b2f7-dd96b9df059c",
+        "id": "f16961d4-b16f-44f4-a65e-eb93309170b7",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:13.572005Z",
+        "timestamp": "2026-11-18T18:37:27.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 81.53
+        "nivelReservatorio": 38.12
     },
     {
-        "id": "d2f0e073-ef65-49fa-b489-e9627eab66c6",
+        "id": "7b129f66-98dc-4e0c-841d-4619a8c10413",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:16.572005Z",
+        "timestamp": "2026-11-18T18:37:30.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "f58ca9f7-42c2-4fa2-b7f6-802d6a3ccce9",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:33.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "ea21bdf7-daeb-4542-b6b5-ea05df00939f",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:36.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "651385d3-7df9-4995-86f0-45d4258cdd69",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:36.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 40.22
+    },
+    {
+        "id": "8f2bda12-559d-41f6-969c-2ae204e40296",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:39.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "25d00476-6d2a-4faf-932d-4214c19a7ab3",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:42.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -619,9 +370,9 @@
         }
     },
     {
-        "id": "46415b5a-a32b-45f7-b86b-85fdf0180236",
+        "id": "b38af189-1744-4a5e-b98d-c2624effe48a",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:19.572005Z",
+        "timestamp": "2026-11-18T18:37:45.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -629,9 +380,285 @@
         }
     },
     {
-        "id": "b1fdd2ad-a56c-4431-8643-ecb89f37ca00",
+        "id": "cac598e2-7215-4548-823b-47658df229e1",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:22.572005Z",
+        "timestamp": "2026-11-18T18:37:45.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 42.3
+    },
+    {
+        "id": "dfc09865-d35d-4d1c-b2d1-506880369d09",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:48.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "ba722516-ae8c-4c85-8f08-df4ecd0baf0d",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:51.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "c9dc9317-42e9-4ded-ae8e-27f22ede9f98",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:54.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "7509b07a-f54b-4c8a-a866-cd85b26c45a3",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:54.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 43.82
+    },
+    {
+        "id": "20bd8bc6-8034-4135-880f-5ec663d8f643",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:37:57.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "0ad5c3bc-46b9-4b49-a427-30cc7a21b768",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:00.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "33c4f55c-ee1c-4d45-8949-09009cc5b6b7",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:03.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "cefbf325-9332-4126-8d0a-2bd3b85890dc",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:03.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 45.15
+    },
+    {
+        "id": "fab4707b-91d7-439c-ae85-5561625fd586",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:06.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "e744106e-bcab-44e8-8e47-493f9c1f2003",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:09.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "c33b6010-3e30-4bb5-8abd-83c342859c33",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:12.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "cd7266be-0e2a-4536-8e61-3296711b2a0f",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:12.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 47.16
+    },
+    {
+        "id": "7ab0237b-8332-467f-8d40-15d4a609488e",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:15.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "e4c25afa-0ef2-4d15-a11f-1a85db159a8e",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:18.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "d4496afd-e99c-463f-b589-fcb775b8de5f",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:21.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "a91f0813-a5e4-4fe5-a8d2-9d1b0b97ad1c",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:21.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 49.06
+    },
+    {
+        "id": "a3028dd1-a9e4-402d-b187-ae5511f40770",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:24.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "7e798240-890c-46a5-b50b-7052430a7aea",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:27.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "bb2f3c7b-5943-475c-adc0-34a734d9043f",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:30.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "85c77fa4-e215-4515-bcfc-2424ac91d3b3",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:30.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 51.02
+    },
+    {
+        "id": "44c9c7a7-1237-496e-8314-ac2d16464cf6",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:33.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "f347f46e-9878-4c0a-9ab0-6c8e6bf14a2a",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:36.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "691ff402-8b0b-4a4e-82f4-34f08a6c21d9",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:39.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "d16a9674-1b70-48e9-84dd-8efb43a40c98",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:39.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 52.56
+    },
+    {
+        "id": "997f5744-251f-4c83-8081-2637b10c7d49",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:42.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "1dc6b848-97c3-4f98-bc70-63cba1c7fc6e",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:45.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "3ab1cc65-1601-48e2-a28d-b7c25cc07fe5",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:48.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "27ea72fe-da1d-46f4-9073-1ef7c63151ca",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:48.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 54.13
+    },
+    {
+        "id": "a61f7ec1-0ee2-4bc4-b36b-098e2fd323fa",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:51.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "0931a3db-290c-4bc1-abc7-3f605147308b",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:38:54.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -639,16 +666,26 @@
         }
     },
     {
-        "id": "eef755fe-a6eb-413d-9625-b974ffaa81eb",
+        "id": "1dab59be-89c6-456b-b6fd-7d24d94562d9",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:22.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 83.22
+        "timestamp": "2026-11-18T18:38:57.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
     },
     {
-        "id": "934c46e0-03d3-42d2-be0d-88ddda01413f",
+        "id": "47962b46-5708-4139-a205-6182e537568c",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:25.572005Z",
+        "timestamp": "2026-11-18T18:38:57.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 60.62
+    },
+    {
+        "id": "dbed26f2-7b74-4610-b176-0b8822443195",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:00.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -656,46 +693,9 @@
         }
     },
     {
-        "id": "d860cac2-b50e-4a21-9feb-d31534075daf",
+        "id": "91eaa905-7345-4e5d-810b-48d13820bb74",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:28.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "efde69f8-0b4a-46ee-9bd5-568d706c8385",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:31.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "96261a74-b8f8-4cd9-b4bb-376c221b4286",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:31.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 85.11
-    },
-    {
-        "id": "53e23f5b-cee5-471a-820a-1da9cdecbe21",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:34.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "227b0ae1-a6d5-41ea-940a-736b406b18e0",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:37.572005Z",
+        "timestamp": "2026-11-18T18:39:03.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -703,9 +703,26 @@
         }
     },
     {
-        "id": "0b3f22a7-473b-40b6-8f92-62bc47f9657b",
+        "id": "b3aeca6e-d145-40f2-91d5-1c71bd781aab",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:40.572005Z",
+        "timestamp": "2026-11-18T18:39:06.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "1c4dc25d-6c58-4277-a16e-d25052946f22",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:06.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 73.28
+    },
+    {
+        "id": "9b5b3e75-5762-493e-aa7e-3ef693eeee31",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:09.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -713,16 +730,305 @@
         }
     },
     {
-        "id": "9c80794b-7cc1-4145-abc9-f2d7ea93f318",
+        "id": "9aaad70f-e0b5-4884-b03a-55ecc2aee0aa",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:40.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 96.96
+        "timestamp": "2026-11-18T18:39:12.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
     },
     {
-        "id": "b12425e6-de2f-48b7-b329-13197f5cbe6b",
+        "id": "a61b1e37-ed20-4ed1-b006-0c62fa3d3fc7",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:43.572005Z",
+        "timestamp": "2026-11-18T18:39:15.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "bf6ca50b-b199-4be1-b234-90cb71cfbcf5",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:15.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 74.98
+    },
+    {
+        "id": "cf8516e6-274d-4031-a9da-5bed4f8d3f3b",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:18.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "12076f8f-d8bd-4f4c-b3d4-1ef028c75bad",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:21.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "f4f66f07-15c7-49c7-89ab-eefadea4aeeb",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:24.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "91f0aead-148f-4682-9d98-aeaac7c58b1a",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:24.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 76.56
+    },
+    {
+        "id": "36254dbb-6485-4c2a-82dd-75b14bc424b8",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:27.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "4fc0fc2d-ecfe-4ac5-a027-5359416284f5",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:30.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "3ac76395-8861-4896-9aa9-08228c99091c",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:33.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "46c5a508-3038-4295-8fef-183619bc2d40",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:33.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 78.07
+    },
+    {
+        "id": "101c394c-065a-4a7e-b4de-c0619d1891f7",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:36.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "36a4463a-572c-49a6-ac54-c6d9e8a8e09a",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:39.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "cebffa6d-1e46-46bb-b828-f709b771b3c8",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:42.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "102f80b5-03ef-4e03-a3d8-314bcef7a778",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:42.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 79.64
+    },
+    {
+        "id": "a0bb29ce-145f-4dda-be5f-5d4b5ddb89dd",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:45.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "fb6583e1-82f1-4100-a116-747951767c58",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:48.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "0161d13d-a86f-4edf-864c-afad37bf1e99",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:51.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "f2a6f05a-f427-4e3a-acf0-39cb9c5f7ea2",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:51.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 81.24
+    },
+    {
+        "id": "27ea66fe-b3a9-47d7-bfce-c0ebe28104bf",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:54.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "dd1e8b49-6e37-49f6-adf0-80e6f43b0de3",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:39:57.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "d64919f9-e43f-49f6-8e33-6e108aab0756",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:00.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "55de144a-adc8-4601-9aa1-14b055fcec9a",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:00.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 82.83
+    },
+    {
+        "id": "30a85322-e8cb-4863-b886-60c658959358",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:03.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "8444954d-ca3f-4f42-a233-523b3592a2a9",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:06.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "feb09da0-9b4b-4fa8-8889-f8d354c067eb",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:09.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "94ca7b71-f505-4998-9d8a-73d5e844b4a6",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:09.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 84.27
+    },
+    {
+        "id": "0ee52f25-d6a1-4c89-ad1d-15a4701ca70b",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:12.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "0aa88b17-3fbc-410b-b7c2-1e19892412d8",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:15.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "0b3a9478-6c0c-4faa-831e-0144dfd4db74",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:18.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "acee5ed9-1cf9-4c43-ab55-0825e6f28f69",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:18.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 92.68
+    },
+    {
+        "id": "9a9f0328-fbe3-4668-b7d8-c6768e8dd6ff",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:21.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "80dfcc97-c666-4f58-a441-30b20666a095",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:24.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -730,46 +1036,9 @@
         }
     },
     {
-        "id": "cf0903b8-b863-4628-9568-70044a9ad108",
+        "id": "b75d0921-2f45-4fbf-991f-af10b89c25d6",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:46.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e56aab77-70db-4a5e-aacc-73ea248393e8",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:49.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "06248462-c3f8-4c75-a005-d6f712fd8da4",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:49.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 98.98
-    },
-    {
-        "id": "f6064c79-71f3-4ec9-936b-da419d9935c9",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:52.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e9d23e7f-5396-4c89-a787-2b4e5f94c2f0",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:55.572005Z",
+        "timestamp": "2026-11-18T18:40:27.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -777,9 +1046,16 @@
         }
     },
     {
-        "id": "621fff19-243c-4709-9e6a-84ade50d264d",
+        "id": "8943a191-3b4e-45f6-b68e-b8fd7f8c7cdd",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:58.572005Z",
+        "timestamp": "2026-11-18T18:40:27.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 94.16
+    },
+    {
+        "id": "d86862d4-3c0b-447c-a455-5e3f849e20da",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:30.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -787,16 +1063,147 @@
         }
     },
     {
-        "id": "d2728815-6ebf-48dd-8510-6f81e8459d51",
+        "id": "30647ceb-a18d-4e86-82c2-4ba91f2378aa",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:52:58.572005Z",
+        "timestamp": "2026-11-18T18:40:33.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "79904848-3535-4ced-80bc-f771a90f6f24",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:36.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "7da4bb87-2d5f-4b72-8ebc-f268a4d61989",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:36.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 95.85
+    },
+    {
+        "id": "d7548b2c-cea9-4d52-bb67-5ce4d1f62ce1",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:39.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "0184c9a2-3ff5-4151-a89c-6d35ec7fa36b",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:42.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "f75d5f1e-56b8-4af8-88c5-5604620723f3",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:45.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "7519294c-e9c9-40dc-888d-9d82f075a15d",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:45.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 97.06
+    },
+    {
+        "id": "cd4141d8-ffde-49fd-bb9a-611bb2b27f8d",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:48.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "de1de9ed-bfda-4fe6-b11a-205b305f7414",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:51.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "8347e580-b32d-416f-9631-a76a28bca936",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:54.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "f048451b-428a-4e9a-a700-74af04015f87",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:54.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 99.14
+    },
+    {
+        "id": "2f1449ed-ed27-496c-9111-47d2d52ef42d",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:40:57.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "e3f7c7c4-f0d6-40ef-b59d-b81b33a00c9b",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:00.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "a5492954-26e4-4925-bbf9-c2cca4e1e59a",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:03.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "c368da38-667e-4f03-bf2e-6da1771a743f",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:03.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
         "nivelReservatorio": 100.0
     },
     {
-        "id": "dba0eb4d-f5d1-4a40-a678-f25bf4fd339b",
+        "id": "1e88f8fe-c12e-4d39-ba01-2f846ef93ffe",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:01.572005Z",
+        "timestamp": "2026-11-18T18:41:06.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -804,9 +1211,19 @@
         }
     },
     {
-        "id": "72ea5148-b92b-4c74-b203-722df303ad78",
+        "id": "a4fe36a0-df16-46f1-ae26-864fe41cd519",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:04.572005Z",
+        "timestamp": "2026-11-18T18:41:09.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": false,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "c4191a2f-e750-480e-9a92-95c8172c9600",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:12.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -814,36 +1231,26 @@
         }
     },
     {
-        "id": "9bebcb5b-fed9-4f1a-a270-9f0d961b8a3e",
+        "id": "a30510ab-eb4d-453c-8b1e-b71016fcafb4",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:07.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "24e28fe4-a11d-47bd-bca3-befaf6748126",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:07.572005Z",
+        "timestamp": "2026-11-18T18:41:12.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
         "nivelReservatorio": 100.0
     },
     {
-        "id": "d05093c5-a63d-478d-b3c0-88ce64666b07",
+        "id": "e644ba15-da68-4ff6-b026-286f31e935e1",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:10.572005Z",
+        "timestamp": "2026-11-18T18:41:15.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
-            "indutivo": true,
+            "indutivo": false,
             "capacitivo": true
         }
     },
     {
-        "id": "4f1246eb-9eea-46da-9256-dd010f0ca6b4",
+        "id": "420bf8af-884f-4a58-886d-4d468ec522ef",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:13.572005Z",
+        "timestamp": "2026-11-18T18:41:18.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -851,9 +1258,9 @@
         }
     },
     {
-        "id": "7a291a66-c936-453e-a980-8474b96ae1a6",
+        "id": "f3722a4e-02c7-4fd8-b5aa-9f4fa0a04f29",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:16.572005Z",
+        "timestamp": "2026-11-18T18:41:21.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -861,16 +1268,16 @@
         }
     },
     {
-        "id": "15188dba-c7bd-4fc7-8f43-484c50f26f61",
+        "id": "c3084f75-6052-4ed0-a21e-95749121f400",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:16.572005Z",
+        "timestamp": "2026-11-18T18:41:21.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
         "nivelReservatorio": 100.0
     },
     {
-        "id": "e0827bae-2eef-42e9-a3b7-0973fca53a29",
+        "id": "ada46fb2-aa7c-4f7b-a05f-b4993ae2d23f",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:19.572005Z",
+        "timestamp": "2026-11-18T18:41:24.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -878,9 +1285,9 @@
         }
     },
     {
-        "id": "8b4cee94-b2c9-4033-881e-31c69ade0a52",
+        "id": "ac1b060c-188e-42b7-a97b-d297c8158c65",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:22.572005Z",
+        "timestamp": "2026-11-18T18:41:27.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -888,26 +1295,9 @@
         }
     },
     {
-        "id": "470b7a19-eb2d-4060-b23a-ddf4c42a18d5",
+        "id": "fb9b623c-cd8d-4838-bb85-4ed77ada8395",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:25.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "eb1670ff-d23c-4741-b9de-2c8ee15d3995",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:25.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "65f47c15-7d04-47e4-a636-45279a491f32",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:28.572005Z",
+        "timestamp": "2026-11-18T18:41:30.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -915,9 +1305,36 @@
         }
     },
     {
-        "id": "bed5dcf7-32da-437c-861a-716901c267a8",
+        "id": "458f7de2-826e-4d85-ab9c-823f242ee7f8",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:31.572005Z",
+        "timestamp": "2026-11-18T18:41:30.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 100.0
+    },
+    {
+        "id": "15f28550-8ec6-4d55-815d-4967dc01b60f",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:33.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "3d77472a-b561-4764-aea2-159de9394bcc",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:36.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "136b53f5-2dd6-449e-b42b-8e569440d445",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:39.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -925,9 +1342,36 @@
         }
     },
     {
-        "id": "cea6780a-59f5-4fa9-ae78-d15c25c394d4",
+        "id": "e9c99d83-cbfc-45ed-b37e-ced85b0b6479",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:34.572005Z",
+        "timestamp": "2026-11-18T18:41:39.733594Z",
+        "tipoEvento": "NIVEL_RESERVATORIO",
+        "nivelReservatorio": 100.0
+    },
+    {
+        "id": "ce3db16b-1460-4f0f-82fa-a2fe6c29f6f9",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:42.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "7e2dd710-e961-4e7f-8711-fffaace25aa9",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:45.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "5e617070-67fc-4789-bd77-13235b75db15",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:41:48.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -935,16 +1379,16 @@
         }
     },
     {
-        "id": "c0f55d1d-3f92-4d3b-9d9b-c42bd223f167",
+        "id": "e979e58d-0cac-4b52-855b-359e4e33ac88",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:34.572005Z",
+        "timestamp": "2026-11-18T18:41:48.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
         "nivelReservatorio": 100.0
     },
     {
-        "id": "b3183806-64be-4e5a-b4da-b72e6df81ccf",
+        "id": "e643f885-2834-4b0c-a8a1-0edd24938f0a",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:37.572005Z",
+        "timestamp": "2026-11-18T18:41:51.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -952,9 +1396,9 @@
         }
     },
     {
-        "id": "c7063001-e5c2-4061-83f4-4d6d7e6588fd",
+        "id": "f010851e-d55f-4b12-bce6-364a961c3747",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:40.572005Z",
+        "timestamp": "2026-11-18T18:41:54.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -962,36 +1406,9 @@
         }
     },
     {
-        "id": "55532f2c-20fa-4952-bdca-10742b0bd187",
+        "id": "40daff5b-7841-4fcb-8417-4784dc2abeec",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:43.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "1eea63bc-ddbc-41b1-9b6e-551806fb7253",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:43.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "b051e50b-55cd-408b-a494-5c6326818cce",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:46.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "389f9184-2ca4-4318-97e7-c67d0af2fcb2",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:49.572005Z",
+        "timestamp": "2026-11-18T18:41:57.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": false,
@@ -999,36 +1416,16 @@
         }
     },
     {
-        "id": "dd3fa3b0-a3f1-404c-976e-935681d6c115",
+        "id": "e604135f-0f4d-4c21-95a6-74fb8a253f58",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:52.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "a3c13113-a763-4487-8d68-ac744a7f825b",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:52.572005Z",
+        "timestamp": "2026-11-18T18:41:57.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
         "nivelReservatorio": 100.0
     },
     {
-        "id": "062d7595-722a-4b09-a024-419edda1aefd",
+        "id": "9bac2381-527d-4501-b785-e506614f9986",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:55.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "957dc46e-1b9d-4885-9f12-f229301b9a0a",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:53:58.572005Z",
+        "timestamp": "2026-11-18T18:42:00.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -1036,9 +1433,9 @@
         }
     },
     {
-        "id": "33f227e5-7dc0-4fde-a805-a087a5ff1ccd",
+        "id": "a42f7253-1f79-4c9e-9680-ff24d955de67",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:01.572005Z",
+        "timestamp": "2026-11-18T18:42:03.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -1046,147 +1443,26 @@
         }
     },
     {
-        "id": "9993605a-019f-4b80-97d0-628d7d846281",
+        "id": "4bc71e34-013e-45df-8153-82ee3cfbf2c3",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:01.572005Z",
+        "timestamp": "2026-11-18T18:42:06.733594Z",
+        "tipoEvento": "PECA_DETECTADA",
+        "sensores": {
+            "indutivo": true,
+            "capacitivo": true
+        }
+    },
+    {
+        "id": "b23f5a9b-9dbb-440e-8558-3e51092b83a7",
+        "equipamento": "ESTEIRA-01",
+        "timestamp": "2026-11-18T18:42:06.733594Z",
         "tipoEvento": "NIVEL_RESERVATORIO",
         "nivelReservatorio": 100.0
     },
     {
-        "id": "d00d1d38-fe81-44be-b44c-77dba65831a3",
+        "id": "1dd3de71-f370-47a0-88a9-649e02562820",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:04.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "4a044cc1-ac38-4760-a239-bfb899bb187e",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:07.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "3d9fba27-3562-429f-b58e-1bd1a879a53f",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:10.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "11fe0da7-329a-4d3a-9f44-7ace7e796c81",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:10.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "3963ba9d-e3ce-41d1-b727-6ef7a86f7a10",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:13.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "3a58bce6-d40f-400d-8812-4290f67498ab",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:16.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "84934b4b-ec8d-48c1-af59-960bef3d55c6",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:19.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "b0e03169-7353-4fe0-8b4a-5dfaeaaefed0",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:19.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "73911843-d4f1-4f56-a8bb-e7fc72eec375",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:22.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "f524a16d-c628-4f53-9df9-e17c654feda3",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:25.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "6adc4452-7a39-43e4-945a-ce875390c804",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:28.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "c2a29fe5-c3b8-41e7-aaee-0a236c3bc995",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:28.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "9f903a68-bb0b-4467-9430-96c7f80ac799",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:31.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e3b0e6a5-12ac-4a4d-ab74-28bb6a31cd49",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:34.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "240b04fb-69ec-4f21-9bf8-c875129b3725",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:37.572005Z",
+        "timestamp": "2026-11-18T18:42:09.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
@@ -1194,285 +1470,9 @@
         }
     },
     {
-        "id": "0fa5078c-c76b-4272-9b65-17c111ff5dba",
+        "id": "df6c2a00-29c0-4e24-9352-129c441953c2",
         "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:37.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "da0acaf4-82c0-4301-a69e-0e7e79b761fb",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:40.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e965d14e-bd2b-49e8-9865-baeb24cd0683",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:43.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": false
-        }
-    },
-    {
-        "id": "d725545e-8d39-40b3-8e0e-36ccf5a8868e",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:46.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "df8abecf-1d25-4e23-a676-9158c0350124",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:46.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "2e158b70-388c-4937-8ba5-08434f830a7a",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:49.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "ca07f557-3207-4769-a203-89b5048c5884",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:52.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "3a819af8-4fb6-48ca-ad7a-bb9a3635b1c5",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:55.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "80a7c245-3380-4b2b-a89c-2fdb5f38c643",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:55.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "86ce000a-796a-45c0-8ac7-815e64756ca4",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:54:58.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "805641fe-df26-4efb-ac30-dac042baf2d6",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:01.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "f8467a8c-5565-4560-9f3c-4bbf4494df2e",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:04.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "13aa480b-e230-4da0-b3d2-4c18f98d1200",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:04.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "29cd8ed1-578d-495d-b0d5-0999ed28f301",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:07.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": false
-        }
-    },
-    {
-        "id": "7494e970-e9ff-4440-9a44-855da308bc4d",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:10.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "8daf5f43-986f-42e3-9bd2-3447656021e0",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:13.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "d0e054b2-29ae-42ff-b5a8-964ec38344a4",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:13.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "9d32e43e-45f4-4dd1-a1f9-b4cf42cfe3cb",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:16.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e6b0c8c9-43d8-4bdc-babb-24f0f66c2f33",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:19.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "4e5823e2-5524-45f4-9aed-fa4bc719f184",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:22.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "5ecc6683-e8b4-45fe-8ac6-956a0f1be598",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:22.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "45a7d826-3ca1-4c5d-8bd9-e6b01f445673",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:25.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "aa184ee0-ac8f-466e-a20d-58319ce1cc09",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:28.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "ff3930f0-64c0-43cf-b71f-8d6f67340513",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:31.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "47bbc414-a730-4f4e-8012-2e88f284a2ea",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:31.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "896aab41-5b76-40e8-9e55-13d18f1f65ed",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:34.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "5e0472d7-1711-4982-b3ee-1302fd814fce",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:37.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "e731ed9a-d236-4449-b98a-c8ad15b2d6d1",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:40.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": true,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "fc3ad031-1008-45c9-9995-f1fb46f4cf2d",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:40.572005Z",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 100.0
-    },
-    {
-        "id": "ef41c844-e961-4d37-a52a-20851f7bbb8a",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:43.572005Z",
-        "tipoEvento": "PECA_DETECTADA",
-        "sensores": {
-            "indutivo": false,
-            "capacitivo": true
-        }
-    },
-    {
-        "id": "bb399af6-9228-4869-a9bf-c60197830147",
-        "equipamento": "ESTEIRA-01",
-        "timestamp": "2026-11-11T01:55:46.572005Z",
+        "timestamp": "2026-11-18T18:42:12.733594Z",
         "tipoEvento": "PECA_DETECTADA",
         "sensores": {
             "indutivo": true,
