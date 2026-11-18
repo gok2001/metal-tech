@@ -9,7 +9,7 @@ function dois(numero) {
   return "" + numero;
 }
 
-// recebe uma data (ou texto de data) e devolve "16:30 - 11/11/2026"
+// formata data e hora ex "16:30 - 11/11/2026"
 function formatarDataHora(valor) {
   if (!valor) {
     return "—";
@@ -26,6 +26,8 @@ function formatarDataHora(valor) {
   return hora + " - " + dia;
 }
 
+
+// amostra off ou on api 
 function Rodape(props) {
   var classe = "mt-rodape-api";
   var texto = "API conectada";

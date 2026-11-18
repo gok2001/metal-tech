@@ -1,5 +1,8 @@
 
+/*css das barras*/
+
 .mt-card-ocupacao {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -110,4 +113,34 @@
   .ocupacao-percentual {
     font-size: 17px;
   }
+}
+
+/*alerta ocupação barras*/
+.ocupacao-progresso.alerta {
+  background: linear-gradient(
+    90deg,
+    #f59e0b,
+    #facc15
+  );
+}
+
+/*ocupação a partir de 90% */
+.ocupacao-progresso.critico {
+  background: linear-gradient(
+    90deg,
+    #dc2626,
+    #ef4444
+  );
+}
+
+/* Ícone de alerta no canto inferior esquerdo */
+.ocupacao-alerta-icone {
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
 }

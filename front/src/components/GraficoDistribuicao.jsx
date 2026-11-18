@@ -15,7 +15,7 @@ function GraficoDistribuicao(props) {
   var naoMetalicas = props.naoMetalicas || 0;
   var soma = metalicas + naoMetalicas;
 
-  // protecao porcentagem em 0
+  // protecao porcentagem feito com I.A
 
   var pctMetalicas = 0;
   var pctNaoMetalicas = 0;
@@ -32,13 +32,15 @@ function GraficoDistribuicao(props) {
   ];
   var cores = [COR_METALICAS, COR_NAO_METALICAS];
 
-  // sem as peças vai exibir a roda do grafico em cinza
+  // quando nao tiver dado para exibir o grafico pizza vai ficar cinza
+
   if (soma === 0) {
     dadosGrafico = [{ name: "Sem peças", value: 1 }];
     cores = [COR_VAZIO];
   }
 
-  // puxa o valor de total para colocar no meio
+  // total meio da rosca
+
   var total = props.total;
   if (total === undefined || total === null) {
     total = soma;

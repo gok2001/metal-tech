@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 
 import Header from "./Header.jsx";
@@ -7,23 +8,31 @@ import CardOcupacao from "./CardOcupacao.jsx";
 import GraficoDistribuicao from "./GraficoDistribuicao.jsx";
 import GraficoProducao from "./GraficoProducao.jsx";
 import GraficoReservatorio from "./GraficoReservatorio.jsx";
+
 import Rodape from "./Rodape.jsx";
 import EstatisticasDescritivas from "./EstatisticasDescritivas.jsx";
 import HistogramaReservatorio from "./HistogramaReservatorio.jsx";
 import BoxplotReservatorio from "./BoxplotReservatorio.jsx";
 
+// Conexão APIs
 import { buscarDados } from "../services/api.js";
+import { buscarEstatisticasReservatorios } from "../services/estatisticas.js";
+
 
 import { Box, Settings, Recycle } from "lucide-react";
 
-var CAMINHO_RA = "http://localhost:5174";
+// Endereço da Realidade Aumentada
+var CAMINHO_RA = "https://localhost:5174";
 
 function Dashboard() {
+  
+  // estado se esta on ou off
   var [online, setOnline] = useState(false);
-  var [ultimaAtualizacao, setUltimaAtualizacao] = useState(null);
 
-  // Todos os dados começam vazios.
-  // Nenhum valor é simulado.
+  var [ultimaAtualizacao, setUltimaAtualizacao] =
+    useState(null);
+
+  // Dados dos utilizado nos graficos e reservatorio
   var [dados, setDados] = useState({
     // Contadores gerais
     total_pecas: null,
@@ -44,44 +53,131 @@ function Dashboard() {
     historico_producao: [],
     historico_reservatorio: [],
 
-    // Estatísticas calculadas pelo back-end
+    // Estatísticas calculadas pela Ciência de Dados
     estatisticas_producao: null,
     estatisticas_reservatorio: null,
   });
 
+  // Consultar back
+
   useEffect(function () {
     var ativo = true;
+    var consultando = false;
 
-    function carregarDados() {
-      buscarDados()
-        .then(function (resposta) {
-          if (!ativo) return;
+    async function carregarDados() {
+      // Evita requisições sobrepostas
+      if (consultando) return;
 
-          if (resposta) {
-            setOnline(true);
+      consultando = true;
 
-            // Atualiza os dados recebidos da API
-            setDados(function (anterior) {
-              return Object.assign({}, anterior, resposta);
-            });
+      try {
+        const resposta = await buscarDados();
 
-            // Última atualização bem-sucedida
-            setUltimaAtualizacao(resposta.ultima_atualizacao || new Date());
-          } else {
-            setOnline(false);
-          }
-        })
-        .catch(function () {
-          if (ativo) {
-            setOnline(false);
-          }
-        });
+        if (!ativo) return;
+
+        if (resposta) {
+          setOnline(true);
+
+          // Atualiza somente os campos recebidos
+          setDados(function (anterior) {
+            return {
+              ...anterior,
+              ...resposta,
+            };
+          });
+
+          setUltimaAtualizacao(
+            resposta.ultima_atualizacao || new Date()
+          );
+        } else {
+          setOnline(false);
+        }
+      } catch (erro) {
+        if (ativo) {
+          console.error(
+            "Erro ao consultar o backend Java:",
+            erro
+          );
+
+          setOnline(false);
+        }
+      } finally {
+        consultando = false;
+      }
     }
 
+    // Primeira consulta ao abrir o dashboard
     carregarDados();
 
-    // Consulta a API a cada 5 segundos
-    var intervalo = setInterval(carregarDados, 5000);
+    // Atualiza a cada 30 segundos
+    var intervalo = setInterval(
+      carregarDados,
+      30000
+    );
+
+    // Encerra consultas periódicas ao desmontar
+    return function () {
+      ativo = false;
+      clearInterval(intervalo);
+    };
+  }, []);
+
+  // consulta CIDA
+
+  useEffect(function () {
+    var ativo = true;
+    var consultando = false;
+
+    async function atualizarEstatisticas() {
+      // Evita consultas simultâneas
+      if (consultando) return;
+
+      consultando = true;
+
+      try {
+        const resultado =
+          await buscarEstatisticasReservatorios();
+
+        if (!ativo) return;
+
+        // Adiciona as estatísticas ao estado
+        // sem apagar os dados da produção
+        setDados(function (anterior) {
+          return {
+            ...anterior,
+            ...resultado,
+          };
+        });
+      } catch (erro) {
+        console.error(
+          "Erro ao consultar estatísticas Python:",
+          erro
+        );
+
+        if (ativo) {
+          // Não apresenta estatísticas antigas
+          // como se fossem dados atualizados
+          setDados(function (anterior) {
+            return {
+              ...anterior,
+              estatisticas_reservatorio: null,
+              boxplot_reservatorio: null,
+            };
+          });
+        }
+      } finally {
+        consultando = false;
+      }
+    }
+
+    // Primeira consulta ao abrir o dashboard
+    atualizarEstatisticas();
+
+    // Atualiza dados
+    var intervalo = setInterval(
+      atualizarEstatisticas,
+      30000
+    );
 
     return function () {
       ativo = false;
@@ -89,21 +185,30 @@ function Dashboard() {
     };
   }, []);
 
-  var estatisticasProducao = dados.estatisticas_producao || {};
+  var estatisticasProducao =
+    dados.estatisticas_producao || {};
 
   return (
     <div className="mt-pagina container">
-      {/* CABEÇALHO */}
-      <Header online={online} caminhoRA={CAMINHO_RA} />
 
-      {/* PRIMEIRA LINHA: CINCO CARDS */}
+      {/* CABEÇALHO */}
+      <Header
+        online={online}
+        caminhoRA={CAMINHO_RA}
+      />
+
+      {/* Linha dos cards */}
+
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-5 g-3 mb-3">
+
         {/* TOTAL DE PEÇAS */}
         <div className="col">
           <CardIndicador
             titulo="Total de Peças"
             valor={dados.total_pecas}
-            icone={<Box size={32} color="#00BFFF" />}
+            icone={
+              <Box size={32} color="#00BFFF" />
+            }
             cor="azul"
           />
         </div>
@@ -113,7 +218,9 @@ function Dashboard() {
           <CardIndicador
             titulo="Peças Metálicas"
             valor={dados.pecas_metalicas}
-            icone={<Settings size={32} color="#00BFFF" />}
+            icone={
+              <Settings size={32} color="#00BFFF" />
+            }
             cor="azul"
           />
         </div>
@@ -123,7 +230,9 @@ function Dashboard() {
           <CardIndicador
             titulo="Peças Não Metálicas"
             valor={dados.pecas_nao_metalicas}
-            icone={<Recycle size={32} color="#FFAE00" />}
+            icone={
+              <Recycle size={32} color="#FFAE00" />
+            }
             cor="laranja"
           />
         </div>
@@ -132,8 +241,12 @@ function Dashboard() {
         <div className="col">
           <CardOcupacao
             titulo="Reservatório Metálico"
-            quantidade={dados.quantidade_reservatorio_metalico}
-            capacidade={dados.capacidade_reservatorio_metalico}
+            quantidade={
+              dados.quantidade_reservatorio_metalico
+            }
+            capacidade={
+              dados.capacidade_reservatorio_metalico
+            }
             icone={<Box size={32} />}
             cor="azul"
           />
@@ -143,27 +256,38 @@ function Dashboard() {
         <div className="col">
           <CardOcupacao
             titulo="Reservatório Não Metálico"
-            quantidade={dados.quantidade_reservatorio_nao_metalico}
-            capacidade={dados.capacidade_reservatorio_nao_metalico}
+            quantidade={
+              dados.quantidade_reservatorio_nao_metalico
+            }
+            capacidade={
+              dados.capacidade_reservatorio_nao_metalico
+            }
             icone={<Recycle size={32} />}
             cor="laranja"
           />
         </div>
+
       </div>
 
-      {/* SEGUNDA LINHA: GRÁFICOS */}
+      {/* graficos abaixo feito com auxilio i.a */}
+
       <div className="row g-3 mb-3">
-        {/* GRÁFICO DE PRODUÇÃO */}
+
+        {/* grafoco produção */}
         <div className="col-12 col-lg-6 col-xl-4">
-          <GraficoProducao dados={dados.historico_producao} />
+          <GraficoProducao
+            dados={dados.historico_producao}
+          />
         </div>
 
-        {/* GRÁFICO DO RESERVATÓRIO */}
+        {/* grafico reservatorio */}
         <div className="col-12 col-lg-6 col-xl-4">
-          <GraficoReservatorio dados={dados.historico_reservatorio} />
+          <GraficoReservatorio
+            dados={dados.historico_reservatorio}
+          />
         </div>
 
-        {/* GRÁFICO DE DISTRIBUIÇÃO */}
+        {/* grafico pizza */}
         <div className="col-12 col-xl-4">
           <GraficoDistribuicao
             metalicas={dados.pecas_metalicas}
@@ -171,32 +295,51 @@ function Dashboard() {
             total={dados.total_pecas}
           />
         </div>
+
       </div>
 
-      {/* TERCEIRA LINHA: CIÊNCIA DE DADOS */}
+      {/* Parte da CIDa*/}
+
       <div className="row g-3 mb-3">
-        {/* ESTATÍSTICAS DESCRITIVAS */}
+
+        {/* estatistica */}
         <div className="col-12 col-xl-4">
           <EstatisticasDescritivas
-            metalicas={estatisticasProducao.metalicas}
-            naoMetalicas={estatisticasProducao.naoMetalicas}
-            estoque={dados.estatisticas_reservatorio}
+            metalicas={
+              estatisticasProducao.metalicas
+            }
+            naoMetalicas={
+              estatisticasProducao.naoMetalicas
+            }
+            estoque={
+              dados.estatisticas_reservatorio
+            }
           />
         </div>
 
-        {/* HISTOGRAMA RESERVATÓRIO */}
+        {/* histograma */}
         <div className="col-12 col-md-6 col-xl-4">
-          <HistogramaReservatorio dados={dados.histograma_reservatorio} />
+          <HistogramaReservatorio
+            dados={dados.histograma_reservatorio}
+          />
         </div>
 
-        {/* BOXPLOT DO ESTOQUE */}
+        {/* boxplot */}
         <div className="col-12 col-md-6 col-xl-4">
-          <BoxplotReservatorio dados={dados.boxplot_reservatorio} />
+          <BoxplotReservatorio
+            dados={dados.boxplot_reservatorio}
+          />
         </div>
+
       </div>
 
-      {/* RODAPÉ */}
-      <Rodape online={online} ultimaAtualizacao={ultimaAtualizacao} />
+      {/*rodape*/}
+
+      <Rodape
+        online={online}
+        ultimaAtualizacao={ultimaAtualizacao}
+      />
+
     </div>
   );
 }

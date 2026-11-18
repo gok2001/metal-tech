@@ -35,7 +35,7 @@
   font-weight: 500;
 }
 
-/* celular: as 3 colunas viram uma embaixo da outra */
+/* celular: as 3 colunas viram uma embaixo da outra  feito com i.a */
 @media (max-width: 767px) {
   .mt-est-colunas {
     grid-template-columns: 1fr;

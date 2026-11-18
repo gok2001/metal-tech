@@ -1,9 +1,7 @@
 
 const API_BASE = "/api/v1/analytics";
 
-// ==========================================
-// CONSULTAR ENDPOINTS DO BACKEND
-// ==========================================
+// end point
 
 async function consultarLista(caminho) {
   const resposta = await fetch(`${API_BASE}${caminho}`, {
@@ -31,9 +29,7 @@ async function consultarLista(caminho) {
   return dados;
 }
 
-// ==========================================
-// VALIDAR VALORES
-// ==========================================
+// validador
 
 function numeroNaoNegativo(valor) {
   return typeof valor === "number" &&
@@ -131,6 +127,7 @@ function prepararProducao(lista) {
   );
 
   // CORREÇÃO: total geral é a soma das duas categorias
+  
   const totalPecas =
     totalMetalicas + totalNaoMetalicas;
 
@@ -149,9 +146,7 @@ function prepararProducao(lista) {
   };
 }
 
-// ==========================================
-// PREPARAR DADOS DOS RESERVATÓRIOS
-// ==========================================
+// prepara dados dash
 
 function prepararReservatorios(lista) {
   const metalico = lista.find(
@@ -177,12 +172,11 @@ function prepararReservatorios(lista) {
   };
 }
 
-// ==========================================
-// BUSCAR DADOS REAIS DO BACKEND
-// ==========================================
+// busca dados
 
 export async function buscarDados() {
   try {
+
     // Consulta os dois endpoints
     const [producao, reservatorios] = await Promise.all([
       consultarLista("/production"),

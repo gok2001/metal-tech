@@ -14,7 +14,6 @@ import "../styles/GraficoProducao.css";
 var COR_RESERVATORIO = "#22e08a";
 
 // Converte o que chegar da API pro formato do gráfico: { hora: "08h", quantidade: 20 }
-// Se o back mandar com outros nomes de campo, é só mudar AQUI.
 
 function prepararDados(lista) {
   var resultado = [];

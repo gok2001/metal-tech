@@ -18,8 +18,6 @@ body {
   color: #fff;
   font-family: "Segoe UI", Roboto, sans-serif;
 }
-
-/* ---------- página principal ---------- */
 .mt-pagina {
   width: 96%;
   max-width: 1600px;
@@ -27,7 +25,7 @@ body {
   padding: 16px 12px;
 }
 
-/* ---------- cards ---------- */
+/* cards */
 .mt-card {
   background: linear-gradient(180deg, #08131f, #050c14);
   border: 1px solid rgba(34, 224, 138, 0.25);
@@ -37,7 +35,7 @@ body {
   min-width: 0;
 }
 
-/* ---------- cabeçalho ---------- */
+/* header */
 .mt-header {
   display: flex;
   align-items: center;
@@ -131,33 +129,8 @@ body {
   background: #ef4444;
 }
 
-/* ---------- caixas do esqueleto (temporárias) ---------- */
-.mt-card.mt-caixa {
-  margin-bottom: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
-.mt-caixa h3 {
-  margin: 0 0 8px;
-  font-size: 16px;
-  color: #cbd5e1;
-}
-
-.mt-caixa-corpo {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px dashed rgba(148, 163, 184, 0.3);
-  border-radius: 10px;
-  color: #64748b;
-  font-size: 13px;
-  min-width: 0;
-}
-
-/* ---------- telas médias ---------- */
+/* responsividade telas feito com i.a */
 @media (max-width: 1199px) {
   .mt-header {
     flex-wrap: wrap;
@@ -169,7 +142,7 @@ body {
   }
 }
 
-/* ---------- celular ---------- */
+/* responsividade celular feito com i.a */
 @media (max-width: 576px) {
   .mt-pagina {
     width: 100%;

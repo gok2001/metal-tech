@@ -2,6 +2,7 @@ import { ChartColumn } from "lucide-react";
 import "../styles/EstatisticasDescritivas.css";
 
 // número com 1 casa decimal e vírgula sem dado vira "-"
+
 function formatarNumero(valor) {
   if (typeof valor !== "number" || !isFinite(valor)) {
     return "—";
