@@ -112,7 +112,7 @@ function Dashboard() {
     // Atualiza a cada 30 segundos
     var intervalo = setInterval(
       carregarDados,
-      30000
+      5000
     );
 
     // Encerra consultas periódicas ao desmontar
@@ -176,7 +176,7 @@ function Dashboard() {
     // Atualiza dados
     var intervalo = setInterval(
       atualizarEstatisticas,
-      30000
+      5000
     );
 
     return function () {

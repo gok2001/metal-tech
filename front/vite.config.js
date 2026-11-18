@@ -24,7 +24,7 @@ export default defineConfig({
 
       // Backend principal - Java
       "/api": {
-        target: "http://10.110.12.57:8080",
+        target: "http://10.110.12.21:8080",
         changeOrigin: true,
       },
     },
