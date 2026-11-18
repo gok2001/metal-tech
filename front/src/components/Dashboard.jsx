@@ -55,7 +55,8 @@ function Dashboard() {
 
     // Estatísticas calculadas pela Ciência de Dados
     estatisticas_producao: null,
-    estatisticas_reservatorio: null,
+    estatisticas_reservatorio_metalico: null,
+    estatisticas_reservatorio_nao_metalico: null,
   });
 
   // Consultar back
@@ -160,7 +161,8 @@ function Dashboard() {
           setDados(function (anterior) {
             return {
               ...anterior,
-              estatisticas_reservatorio: null,
+              estatisticas_reservatorio_metalico: null,
+    estatisticas_reservatorio_nao_metalico: null,
               boxplot_reservatorio: null,
             };
           });
