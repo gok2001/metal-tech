@@ -16,8 +16,8 @@ def adicionar_evento_peca(estado, tipo, ts, indutivo, capacitivo):
         "tipoEvento": tipo,
         "sensores": {
             "indutivo": indutivo,
-            "capacitivo": capacitivo
-        }
+            "capacitivo": capacitivo,
+        },
     }
 
     with estado["trava"]:
@@ -47,27 +47,20 @@ def processar_classificacao(estado, cap, ind):
         and not detectando
         and agora_t - estado["ultimo_detectado"] >= FIM_EVENTO
     ):
-        classificacao = (
-            "METALICA" if estado["ind_visto"]
-            else "NAO_METALICA"
-        )
-
         adicionar_evento_peca(
             estado,
             "PECA_DETECTADA",
             estado["ts_evento"],
             estado["ind_visto"],
-            estado["cap_visto"]
+            estado["cap_visto"],
         )
-
-        estado["pecas_aguardando_reservatorio"].append(classificacao)
 
         adicionar_evento_peca(
             estado,
             "SEM_PECA",
             agora_utc(),
             False,
-            False
+            False,
         )
 
         estado["em_evento"] = False

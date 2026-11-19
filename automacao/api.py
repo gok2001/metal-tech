@@ -1,6 +1,5 @@
 import json
 import threading
-import uuid
 from datetime import datetime, timezone
 
 import requests
@@ -17,18 +16,18 @@ def agora_utc():
 
 
 def montar_payload(estado, leituras):
-    estado["lote_seq"] += 1
+    with estado["trava"]:
+        estado["lote_seq"] += 1
+        seq = estado["lote_seq"]
+
     enviado_em = agora_utc()
 
     return {
-        "loteId": (
-            f"LOTE-{enviado_em[:10].replace('-', '')}-"
-            f"{estado['lote_seq']:03d}"
-        ),
+        "loteId": f"LOTE-{enviado_em[:10].replace('-', '')}-{seq:03d}",
         "equipamento": EQUIPAMENTO,
         "enviadoEm": enviado_em,
         "intervaloSegundos": INTERVALO_ENVIO,
-        "leituras": leituras
+        "leituras": leituras,
     }
 
 
@@ -38,7 +37,7 @@ def devolver_para_fila(estado, fila, leituras):
 
 
 def enviar_post(estado, payload, fila):
-    print("\\n========== JSON ENVIADO ==========")
+    print("\n========== JSON ENVIADO ==========")
     print(json.dumps(payload, indent=2, ensure_ascii=False))
     print("==================================")
 
@@ -93,7 +92,7 @@ def enviar_lotes(estado):
         threading.Thread(
             target=enviar_post,
             args=(estado, payload_esteira, estado["pendentes_esteira"]),
-            daemon=True
+            daemon=True,
         ).start()
 
     if lote_reservatorio:
@@ -104,7 +103,7 @@ def enviar_lotes(estado):
             args=(
                 estado,
                 payload_reservatorio,
-                estado["pendentes_reservatorio"]
+                estado["pendentes_reservatorio"],
             ),
-            daemon=True
+            daemon=True,
         ).start()
