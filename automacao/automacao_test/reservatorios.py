@@ -2,7 +2,7 @@ import time
 import uuid
 from datetime import datetime, timezone
 
-from config import (
+from automacao.automacao_test.config import (
     CAPACIDADE_RESERVATORIO,
     ALVO_METALICA_CM,
     ALVO_NAO_METALICA_CM,

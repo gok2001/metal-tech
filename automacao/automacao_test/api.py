@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 
 import requests
 
-from config import URL_API, EQUIPAMENTO, INTERVALO_ENVIO
+from automacao.automacao_test.config import URL_API, EQUIPAMENTO, INTERVALO_ENVIO
 
 
 def agora():

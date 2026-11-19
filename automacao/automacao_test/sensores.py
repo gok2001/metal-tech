@@ -1,6 +1,6 @@
 import requests
 
-from config import API
+from automacao.automacao_test.config import API
 
 session = requests.Session()
 

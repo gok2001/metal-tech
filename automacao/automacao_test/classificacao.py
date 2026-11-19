@@ -2,7 +2,7 @@ import time
 import uuid
 from datetime import datetime, timezone
 
-from config import FIM_EVENTO, IND_LIVRE
+from automacao.automacao_test.config import FIM_EVENTO, IND_LIVRE
 
 
 def agora_utc():

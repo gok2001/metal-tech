@@ -1,11 +1,11 @@
 import time
 
-from config import INTERVALO_ENVIO, INTERVALO_LOOP
-from sensores import ler
-from classificacao import processar_classificacao
-from reservatorios import processar_distancia
-from api import enviar_lotes
-from logs import registrar_erro, relatar_erros
+from automacao.automacao_test.config import INTERVALO_ENVIO, INTERVALO_LOOP
+from automacao.automacao_test.sensores import ler
+from automacao.automacao_test.classificacao import processar_classificacao
+from automacao.automacao_test.reservatorios import processar_distancia
+from automacao.automacao_test.api import enviar_lotes
+from automacao.automacao_test.logs import registrar_erro, relatar_erros
 
 
 def criar_estado():
