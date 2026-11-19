@@ -1,8 +1,5 @@
 from datetime import datetime
-from math import isfinite
-
-TIPOS_EVENTO = {"PECA_DETECTADA", "NIVEL_RESERVATORIO"}
-TIPOS_RESERVATORIO = {"METALICA", "NAO_METALICA"}
+TIPOS_EVENTO = {"PECA_DETECTADA", "SEM_PECA"}
 
 
 def validar_timestamp(timestamp):
@@ -35,30 +32,23 @@ def validar_evento(evento, equipamento=None, permitir_inconsistencia=False):
     tipo = evento.get("tipoEvento")
     if tipo not in TIPOS_EVENTO:
         erros.append("Tipo de evento desconhecido.")
-    elif tipo == "PECA_DETECTADA":
+    elif tipo in {"PECA_DETECTADA", "SEM_PECA"}:
         sensores = evento.get("sensores")
         if not isinstance(sensores, dict):
             erros.append("Objeto de sensores ausente ou inválido.")
         else:
-            if type(sensores.get("indutivo")) is not bool:
+            indutivo = sensores.get("indutivo")
+            capacitivo = sensores.get("capacitivo")
+            if type(indutivo) is not bool:
                 erros.append("Sensor indutivo deve possuir valor booleano.")
-            if type(sensores.get("capacitivo")) is not bool:
+            if type(capacitivo) is not bool:
                 erros.append("Sensor capacitivo deve possuir valor booleano.")
-            if (not permitir_inconsistencia and type(sensores.get("indutivo")) is bool
-                    and type(sensores.get("capacitivo")) is bool
-                    and sensores["indutivo"] and not sensores["capacitivo"]):
+            if tipo == "SEM_PECA" and not (indutivo is False and capacitivo is False):
+                erros.append("Evento SEM_PECA exige os dois sensores inativos.")
+            if (tipo == "PECA_DETECTADA" and not permitir_inconsistencia
+                    and type(indutivo) is bool and type(capacitivo) is bool
+                    and indutivo and not capacitivo):
                 erros.append("Combinação inconsistente: indutivo ativo e capacitivo inativo.")
-    elif tipo == "NIVEL_RESERVATORIO":
-        # Compatibilidade temporária com eventos do simulador antigo.
-        legado = "reservatorioId" not in evento and "nivelReservatorio" in evento
-        reservatorio = evento.get("reservatorioId")
-        if not legado and reservatorio not in TIPOS_RESERVATORIO:
-            erros.append("reservatorioId deve ser METALICA ou NAO_METALICA.")
-        nivel = evento.get("nivel") if not legado else evento.get("nivelReservatorio")
-        if isinstance(nivel, bool) or not isinstance(nivel, (int, float)):
-            erros.append("Nível do reservatório deve ser numérico.")
-        elif not isfinite(nivel) or nivel < 0 or (legado and nivel > 100):
-            erros.append("Nível do reservatório deve ser finito e não negativo.")
 
     return not erros, erros
 

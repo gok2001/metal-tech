@@ -64,6 +64,40 @@ const formatadorHora = new Intl.DateTimeFormat("pt-BR", {
   minute: "2-digit",
 });
 
+// Estatísticas simples das quantidades observadas em cada minuto.
+function calcularEstatisticasSerie(valores) {
+  const serie = valores.filter((valor) => Number.isFinite(valor)).sort((a, b) => a - b);
+  if (serie.length === 0) return null;
+  const soma = serie.reduce((total, valor) => total + valor, 0);
+  const media = soma / serie.length;
+  const meio = Math.floor(serie.length / 2);
+  const mediana = serie.length % 2 ? serie[meio] : (serie[meio - 1] + serie[meio]) / 2;
+  const frequencias = new Map();
+  serie.forEach((valor) => frequencias.set(valor, (frequencias.get(valor) || 0) + 1));
+  const maiorFrequencia = Math.max(...frequencias.values());
+  const moda = [...frequencias.entries()]
+    .filter(([, frequencia]) => frequencia === maiorFrequencia)
+    .map(([valor]) => valor);
+  const variancia = serie.reduce((total, valor) => total + ((valor - media) ** 2), 0) / serie.length;
+  const quantil = (q) => {
+    const posicao = (serie.length - 1) * q;
+    const inferior = Math.floor(posicao);
+    const superior = Math.ceil(posicao);
+    if (inferior === superior) return serie[inferior];
+    return serie[inferior] + (serie[superior] - serie[inferior]) * (posicao - inferior);
+  };
+  return {
+    quantidade: serie.length,
+    media,
+    mediana,
+    moda,
+    desvioPadrao: Math.sqrt(variancia),
+    minimo: serie[0],
+    maximo: serie[serie.length - 1],
+    quartis: { q1: quantil(0.25), q2: mediana, q3: quantil(0.75) },
+  };
+}
+
 // ==========================================
 // PREPARAR DADOS DA PRODUÇÃO
 // ==========================================
@@ -143,6 +177,10 @@ function prepararProducao(lista) {
       metalicas: item.metalicas,
       nao_metalicas: item.naoMetalicas,
     })),
+    estatisticas_producao: {
+      metalicas: calcularEstatisticasSerie(registros.map((item) => item.metalicas)),
+      naoMetalicas: calcularEstatisticasSerie(registros.map((item) => item.naoMetalicas)),
+    },
   };
 }
 

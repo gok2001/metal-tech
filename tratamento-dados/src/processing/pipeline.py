@@ -7,7 +7,7 @@ from src.analytics.anomaly_detection import (
     detectar_inconsistencias,
 )
 from src.analytics.production import analisar_producao, consolidar_por_minuto
-from src.analytics.reservoir_analysis import analisar_reservatorios
+from src.analytics.reservoir_progression import analisar_progressao_reservatorios
 
 
 def _gerar_id_origem(equipamento, tipo, referencia):
@@ -25,14 +25,10 @@ def processar_historico(eventos):
         evento for evento in eventos
         if isinstance(evento, dict) and evento.get("tipoEvento") == "PECA_DETECTADA"
     ]
-    leituras_reservatorio = [
-        evento for evento in eventos
-        if isinstance(evento, dict) and evento.get("tipoEvento") == "NIVEL_RESERVATORIO"
-    ]
-
     indicadores_gerais = analisar_producao(eventos_pecas)
     producao_por_minuto = consolidar_por_minuto(eventos_pecas)
-    reservatorios = analisar_reservatorios(leituras_reservatorio)
+    progressao_reservatorios = analisar_progressao_reservatorios(producao_por_minuto)
+    reservatorios = progressao_reservatorios["reservatorios"]
 
     equipamento_padrao = next((
         evento.get("equipamento") for evento in eventos
@@ -72,26 +68,14 @@ def processar_historico(eventos):
             "detalhes": ocorrencia,
         })
 
-    for reservatorio_id, resultado in reservatorios.items():
-        for outlier in resultado["outliers"]:
-            anomalias.append({
-                "tipo": "NIVEL_ATIPICO",
-                "equipamento": equipamento_padrao,
-                "tipo_reservatorio": reservatorio_id,
-                "descricao": (
-                    f"Nível atípico no reservatório {reservatorio_id}: "
-                    f"{outlier['nivel']}."
-                ),
-                "severidade": "ALTA",
-                "data_ocorrencia": outlier["timestamp"],
-                "id_origem": outlier["id"],
-                "detalhes": outlier,
-            })
-
     return {
         "producao": indicadores_gerais,
         "producaoPorMinuto": producao_por_minuto,
         "reservatorios": reservatorios,
+        "historicoReservatorios": progressao_reservatorios["historicoReservatorios"],
+        "histogramaReservatorios": progressao_reservatorios["histogramaReservatorios"],
+        "origemDadosReservatorios": progressao_reservatorios["origemDados"],
+        "metodologiaReservatorios": progressao_reservatorios.get("metodologia"),
         "anomalias": anomalias,
         "totalEventosAnalisados": len(eventos),
     }

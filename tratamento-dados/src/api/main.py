@@ -5,7 +5,6 @@ from fastapi import FastAPI, HTTPException
 
 from src.processing.validator import validar_lote
 from src.analytics.production import classificar_peca, obter_minuto
-from src.analytics.reservoir_analysis import analisar_reservatorios
 from src.processing.pipeline import processar_historico
 from src.storage.csv_manager import CSVManager
 from src.integration.spring_boot_client import (
@@ -149,12 +148,21 @@ def receber_leituras(payload: dict):
 
 @app.get("/api/v1/analytics/reservoirs")
 def consultar_analises_reservatorios():
-    """Calcula estatísticas dos níveis físicos preservados nos CSVs."""
-    historico = csv_manager.listar_eventos()
-    resultados = analisar_reservatorios(historico)
+    """Calcula a progressão analítica a partir das 258 leituras brutas de produção.
+
+    As quantidades acumuladas representam peças classificadas por categoria.
+    Não são medições físicas de nível e não atualizam a tabela operacional
+    `reservatorio` do MySQL.
+    """
+    historico_bruto = csv_manager.listar_eventos()
+    processamento = processar_historico(historico_bruto)
 
     return {
-        "quantidadeReservatorios": len(resultados),
-        "reservatorios": resultados,
-        "geradoEm": datetime.now(timezone.utc).isoformat()
+        "quantidadeReservatorios": len(processamento["reservatorios"]),
+        "reservatorios": processamento["reservatorios"],
+        "historicoReservatorios": processamento["historicoReservatorios"],
+        "histogramaReservatorios": processamento["histogramaReservatorios"],
+        "origemDados": processamento["origemDadosReservatorios"],
+        "metodologia": processamento["metodologiaReservatorios"],
+        "geradoEm": datetime.now(timezone.utc).isoformat(),
     }

@@ -164,6 +164,8 @@ function Dashboard() {
               estatisticas_reservatorio_metalico: null,
     estatisticas_reservatorio_nao_metalico: null,
               boxplot_reservatorio: null,
+              historico_reservatorio: [],
+              histograma_reservatorio: [],
             };
           });
         }
@@ -313,8 +315,11 @@ function Dashboard() {
             naoMetalicas={
               estatisticasProducao.naoMetalicas
             }
-            estoque={
-              dados.estatisticas_reservatorio
+            estoqueMetalico={
+              dados.estatisticas_reservatorio_metalico
+            }
+            estoqueNaoMetalico={
+              dados.estatisticas_reservatorio_nao_metalico
             }
           />
         </div>
