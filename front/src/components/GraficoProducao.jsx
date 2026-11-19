@@ -1,6 +1,6 @@
 import {
-  BarChart,
-  Bar,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -34,7 +34,7 @@ function prepararDados(lista) {
 function GraficoProducao(props) {
   var dados = prepararDados(props.dados);
 
-  // grafico feito com auxilio de i.a
+  // O histórico é apresentado cronologicamente como duas séries temporais.
   return (
     <section className="mt-card mt-grafico">
       <div className="mt-grafico-topo">
@@ -57,21 +57,43 @@ function GraficoProducao(props) {
 
       <div className="mt-barras-area">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={dados} margin={{ top: 10, right: 10, left: -15, bottom: 0 }}>
+          <LineChart data={dados} margin={{ top: 10, right: 12, left: -15, bottom: 0 }}>
             <CartesianGrid vertical={false} stroke="rgba(255,255,255,0.08)" />
             <XAxis dataKey="hora" stroke="#cbd5e1" tick={{ fontSize: 12 }} />
-            <YAxis stroke="#cbd5e1" tick={{ fontSize: 12 }} />
+            <YAxis
+              stroke="#cbd5e1"
+              tick={{ fontSize: 12 }}
+              allowDecimals={false}
+              domain={[0, "auto"]}
+            />
             <Tooltip
-              cursor={{ fill: "rgba(255,255,255,0.05)" }}
+              cursor={{ stroke: "rgba(255,255,255,0.18)", strokeDasharray: "3 3" }}
               contentStyle={{
                 background: "#08131f",
                 border: "1px solid rgba(34, 224, 138, 0.3)",
                 borderRadius: "8px"
               }}
+              labelStyle={{ color: "#e2e8f0" }}
             />
-            <Bar dataKey="metalicas" name="Metálicas" fill={COR_METALICAS} radius={[4, 4, 0, 0]} />
-            <Bar dataKey="nao_metalicas" name="Não metálicas" fill={COR_NAO_METALICAS} radius={[4, 4, 0, 0]} />
-          </BarChart>
+            <Line
+              type="monotone"
+              dataKey="metalicas"
+              name="Metálicas"
+              stroke={COR_METALICAS}
+              strokeWidth={2.5}
+              dot={{ r: 3, fill: COR_METALICAS }}
+              activeDot={{ r: 5 }}
+            />
+            <Line
+              type="monotone"
+              dataKey="nao_metalicas"
+              name="Não metálicas"
+              stroke={COR_NAO_METALICAS}
+              strokeWidth={2.5}
+              dot={{ r: 3, fill: COR_NAO_METALICAS }}
+              activeDot={{ r: 5 }}
+            />
+          </LineChart>
         </ResponsiveContainer>
       </div>
     </section>

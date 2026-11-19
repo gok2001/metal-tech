@@ -24,8 +24,8 @@ def test_receber_lote_com_eventos_validos_e_inconsistentes(tmp_path, monkeypatch
              "tipoEvento": "PECA_DETECTADA",
              "sensores": {"indutivo": True, "capacitivo": False}},
             {"id": "EV-003", "timestamp": "2026-11-14T10:00:03Z",
-             "tipoEvento": "NIVEL_RESERVATORIO",
-             "reservatorioId": "METALICA", "nivel": 12.7}
+             "tipoEvento": "SEM_PECA",
+             "sensores": {"indutivo": False, "capacitivo": False}}
         ]
     }
     response = client.post("/api/v1/automacao/leituras", json=lote)
@@ -38,7 +38,9 @@ def test_receber_lote_com_eventos_validos_e_inconsistentes(tmp_path, monkeypatch
     assert processamento["producao"]["total"] == 1
     assert processamento["producao"]["metalicas"] == 1
     assert processamento["producao"]["inconsistentes"] == 1
-    assert processamento["reservatorios"]["METALICA"]["nivelAtual"] == 12.7
+    assert processamento["reservatorios"]["METALICA"]["quantidadeMetalicaAtual"] == 1
+    assert processamento["reservatorios"]["NAO_METALICA"]["quantidadeNaoMetalicaAtual"] == 0
+    assert len(processamento["historicoReservatorios"]) == 1
 
 
 def test_rejeitar_cabecalho_invalido():
@@ -119,3 +121,29 @@ def test_receber_lote_dispara_sincronizacao_apenas_dados_processados(
     assert "producaoPorMinuto" in chamadas[0]
     assert "anomalias" in chamadas[0]
     assert "leituras" not in chamadas[0]
+
+
+def test_endpoint_reservatorios_reconstroi_acumulados_dos_eventos_reais(tmp_path, monkeypatch):
+    from src.api import main
+    from src.storage.csv_manager import CSVManager
+
+    manager = CSVManager(tmp_path)
+    monkeypatch.setattr(main, "csv_manager", manager)
+    eventos = [
+        {"id": "A-1", "equipamento": "ESTEIRA-01", "timestamp": "2026-11-18T00:54:10Z", "tipoEvento": "PECA_DETECTADA", "sensores": {"indutivo": True, "capacitivo": True}},
+        {"id": "A-2", "equipamento": "ESTEIRA-01", "timestamp": "2026-11-18T00:54:20Z", "tipoEvento": "PECA_DETECTADA", "sensores": {"indutivo": False, "capacitivo": True}},
+        {"id": "A-3", "equipamento": "ESTEIRA-01", "timestamp": "2026-11-18T00:54:30Z", "tipoEvento": "SEM_PECA", "sensores": {"indutivo": False, "capacitivo": False}},
+    ]
+    for evento in eventos:
+        manager.salvar_evento(evento)
+
+    resposta = TestClient(main.app).get("/api/v1/analytics/reservoirs")
+
+    assert resposta.status_code == 200
+    dados = resposta.json()
+    assert dados["origemDados"] == "ACUMULO_DERIVADO_DA_PRODUCAO"
+    assert dados["reservatorios"]["METALICA"]["quantidadeMetalicaAtual"] == 1
+    assert dados["reservatorios"]["NAO_METALICA"]["quantidadeNaoMetalicaAtual"] == 1
+    assert len(dados["historicoReservatorios"]) == 1
+    assert sum(item["frequenciaMetalica"] for item in dados["histogramaReservatorios"]) == 1
+    assert sum(item["frequenciaNaoMetalica"] for item in dados["histogramaReservatorios"]) == 1

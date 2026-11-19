@@ -28,8 +28,8 @@ export default function EstatisticasDescritivas(props) {
   const colunas = [
     { titulo: "Peças metálicas", cor: "#2d8cff", dados: props.metalicas },
     { titulo: "Peças não metálicas", cor: "#f59e0b", dados: props.naoMetalicas },
-    { titulo: "Reservatório metálico", cor: "#22e08a", dados: props.estoqueMetalico },
-    { titulo: "Reservatório não metálico", cor: "#a78bfa", dados: props.estoqueNaoMetalico },
+    { titulo: "Reservatório metálico (acumulado)", cor: "#22e08a", dados: props.estoqueMetalico },
+    { titulo: "Reservatório não metálico (acumulado)", cor: "#a78bfa", dados: props.estoqueNaoMetalico },
   ];
 
   return (

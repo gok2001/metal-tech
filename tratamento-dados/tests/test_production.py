@@ -91,8 +91,8 @@ def test_contabilizar_eventos_inconsistentes():
 def test_ignorar_eventos_de_reservatorio():
     evento = {
         "id": "005",
-        "tipoEvento": "NIVEL_RESERVATORIO",
-        "nivelReservatorio": 80
+        "tipoEvento": "SEM_PECA",
+        "sensores": {"indutivo": False, "capacitivo": False}
     }
 
     resultado = analisar_producao([evento])

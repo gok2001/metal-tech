@@ -1,22 +1,32 @@
-
-import json
-
-from pathlib import Path
 from src.processing.validator import validar_eventos
 
 
-def test_validar_dados_do_simulador():
-
-    caminho = Path("data/samples/leituras_exemplo.json")
-
-    with open(caminho, "r", encoding="utf-8") as arquivo:
-        eventos = json.load(arquivo)
+def test_validar_eventos_dos_sensores_de_producao():
+    eventos = [
+        {
+            "id": "TESTE-METALICA",
+            "equipamento": "ESTEIRA-01",
+            "timestamp": "2026-11-18T00:54:34Z",
+            "tipoEvento": "PECA_DETECTADA",
+            "sensores": {"indutivo": True, "capacitivo": True},
+        },
+        {
+            "id": "TESTE-NAO-METALICA",
+            "equipamento": "ESTEIRA-01",
+            "timestamp": "2026-11-18T00:54:40Z",
+            "tipoEvento": "PECA_DETECTADA",
+            "sensores": {"indutivo": False, "capacitivo": True},
+        },
+        {
+            "id": "TESTE-SEM-PECA",
+            "equipamento": "ESTEIRA-01",
+            "timestamp": "2026-11-18T00:54:45Z",
+            "tipoEvento": "SEM_PECA",
+            "sensores": {"indutivo": False, "capacitivo": False},
+        },
+    ]
 
     validos, invalidos = validar_eventos(eventos)
 
-    print(f"\nTotal de eventos: {len(eventos)}")
-    print(f"Eventos válidos: {len(validos)}")
-    print(f"Eventos inválidos: {len(invalidos)}")
-
-    assert len(eventos) > 0
-    assert len(validos) + len(invalidos) == len(eventos)
+    assert len(validos) == 3
+    assert invalidos == []

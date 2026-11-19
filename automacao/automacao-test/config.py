@@ -1,9 +1,18 @@
 # ============================================================
 # CONFIGURAÇÕES GERAIS
 # ============================================================
+# Os endereços padrão preservam a configuração atual da rede industrial.
+# Para testes locais, podem ser sobrescritos sem editar este arquivo:
+#   METALTECH_DATA_API=http://localhost:8000/api/v1/automacao/leituras
+#   METALTECH_SENSOR_API=http://10.110.12.37:5000
 
-URL_API = "http://10.110.12.21:8000/api/v1/automacao/leituras"
-API = "http://10.110.12.37:5000"
+import os
+
+URL_API = os.getenv(
+    "METALTECH_DATA_API",
+    "http://10.110.12.21:8000/api/v1/automacao/leituras"
+)
+API = os.getenv("METALTECH_SENSOR_API", "http://10.110.12.37:5000")
 
 EQUIPAMENTO = "ESTEIRA-01"
 INTERVALO_ENVIO = 5
